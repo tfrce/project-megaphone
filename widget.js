@@ -118,7 +118,7 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
           iframe: '',
           closeButton: ''
         },
-        banner: {
+        top_large_banner: {
           campaign_container: 'position:absolute;width:100%;top:0;opacity:1;z-index:100;background: #fff',
           iframe_container: 'position: relative; height: 100px;margin: 40px 40px 0px 40px;background: #444;border-radius: 10px;',
           iframe: 'width: 100%;height: 100%;border: 0;margin:0; padding:0; border-radius: 10px;',
@@ -136,7 +136,7 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
         document.body.appendChild(campaign_container);
         var iframe = document.createElement('iframe');
         iframe.style.cssText = style.iframe;
-        iframe.src = '../stopwatchingus/version1.html';
+        iframe.src = '../stopwatchingus/' + active_campaign.config.show_style;
         iframe_container.appendChild(iframe);
         var closeButton = document.createElement('button');
         closeButton.style.cssText = style.closeButton;
@@ -144,7 +144,6 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
         closeButton.onclick = function() {
           active_campaign.hide(campaign_container)
         }
-
       },
       init: function (config) {
         active_campaign.config = config;
