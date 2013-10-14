@@ -33,7 +33,7 @@ We popup a notification on your website, depending on which style you chose. The
 
 ## Examples
 
-* (Top Large Banner)[http://tfrce.github.io/widget/example/top_large_banner_example.html]
-* (Top Small Banner)[http://tfrce.github.io/widget/example/top_small_banner_example.html]
-* (Bottom Large Banner)[http://tfrce.github.io/widget/example/bottom_large_banner_example.html]
-* (Center Modal)[http://tfrce.github.io/widget/example/center_modal_example.html]
+* [Top Large Banner](http://tfrce.github.io/widget/example/top_large_banner_example.html)
+* [Top Small Banner](http://tfrce.github.io/widget/example/top_small_banner_example.html)
+* [Bottom Large Banner](http://tfrce.github.io/widget/example/bottom_large_banner_example.html)
+* [Center Modal](http://tfrce.github.io/widget/example/center_modal_example.html)
