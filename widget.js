@@ -40,7 +40,7 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
 
   // Do configuration
 
-  widget_config.show_style = widget_config.show_style || 'modal';
+  widget_config.show_style = widget_config.show_style || 'center_modal';
   widget_config.campaign = widget_config.campaign || 'stopwatchingus';
 
   // Setup

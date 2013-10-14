@@ -9,16 +9,11 @@ Just copy and paste the code below to include the script
 
 
 ```javascript
-<script type="text/javascript">
-window._idl = {};
-_idl.variant = "modal";
-_idl.campaign = "defundnsa";
-(function() {
-    var idl = document.createElement('script');
-    idl.type = 'text/javascript';
-    idl.async = true;
-    idl.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'members.internetdefenseleague.org/include/?url=' + (_idl.url || '') + '&_idl_test=1&campaign=' + (_idl.campaign || '') + '&variant=' + (_idl.variant || 'banner');
-    document.getElementsByTagName('body')[0].appendChild(idl);
+<script> 
+(function(){
+  var e = document.createElement('script'); e.type='text/javascript'; e.async = true;
+  e.src = document.location.protocol + '//cdnjs.cloudflare.com/ajax/libs/tfrce-widget/1/widget.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s);
 })();
 </script>
 ```
