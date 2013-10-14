@@ -12,41 +12,41 @@ body {
 }
 
 /* Widget Version One */
-#tfrce-rally-widget-version-1 { position: fixed; top: 0; background: url('images/gradient-version-1.png'); height: 99px; width: 100%; color: #fff; font-family: 'Helvetica', 'Arial', sans-serif; position: relative; overflow: hidden; }
-#tfrce-rally-widget-version-1 img#tfrce-logo { float: left; margin: 15px; width: 122px; height: 68px; }
-#tfrce-rally-widget-version-1 p#tfrce-body { font-size: 15px; max-width: 500px; margin: 10px auto; text-align: center; padding: 0 20px 0 0; }
-#tfrce-rally-widget-version-1 span#tfrce-heading { background: url('images/tfrce-widget-heading.png'); display: block; width: 436px; height: 27px; margin: 0 auto; }
-#tfrce-rally-widget-version-1 div#tfrce-actions { float: right; }
-#tfrce-rally-widget-version-1 span#tfrce-call-to-action-label { font-size: 11px; color: #ddd; float: left; margin: 15px 0 5px; }
-#tfrce-rally-widget-version-1 a#tfrce-call-to-action { display: block; width: 200px; padding: 10px 0; border-radius: 5px; text-align: center; color: #fff; text-decoration: none; float: left; clear: left; }
-#tfrce-rally-widget-version-1 button#tfrce-close-button { background: url('images/close-button.png'); border: 0; height: 28px; width: 28px; cursor: pointer; float: right; margin: 0 20px 0 10px; }
+#tfrce-rally-widget-top-large-banner { position: fixed; top: 0; background: url('images/gradient-top-large-banner.png'); height: 99px; width: 100%; color: #fff; font-family: 'Helvetica', 'Arial', sans-serif; position: relative; overflow: hidden; }
+#tfrce-rally-widget-top-large-banner img#tfrce-logo { float: left; margin: 15px; width: 122px; height: 68px; }
+#tfrce-rally-widget-top-large-banner p#tfrce-body { font-size: 15px; max-width: 500px; margin: 10px auto; text-align: center; padding: 0 20px 0 0; }
+#tfrce-rally-widget-top-large-banner span#tfrce-heading { background: url('images/tfrce-widget-heading.png'); display: block; width: 436px; height: 27px; margin: 0 auto; }
+#tfrce-rally-widget-top-large-banner div#tfrce-actions { float: right; }
+#tfrce-rally-widget-top-large-banner span#tfrce-call-to-action-label { font-size: 11px; color: #ddd; float: left; margin: 15px 0 5px; }
+#tfrce-rally-widget-top-large-banner a#tfrce-call-to-action { display: block; width: 200px; padding: 10px 0; border-radius: 5px; text-align: center; color: #fff; text-decoration: none; float: left; clear: left; }
+#tfrce-rally-widget-top-large-banner button#tfrce-close-button { background: url('images/close-button.png'); border: 0; height: 28px; width: 28px; cursor: pointer; float: right; margin: 0 20px 0 10px; }
 
 /* Widget Version Two */
-#tfrce-rally-widget-version-2 {}
-#tfrce-rally-widget-version-2 img#tfrce-logo {}
-#tfrce-rally-widget-version-2 p#tfrce-body {}
-#tfrce-rally-widget-version-2 span#tfrce-heading {}
-#tfrce-rally-widget-version-2 span#tfrce-call-to-action-label {}
-#tfrce-rally-widget-version-2 a#tfrce-call-to-action {}
-#tfrce-rally-widget-version-2 button#tfrce-close-button {}
+#tfrce-rally-widget-bottom-large-banner {}
+#tfrce-rally-widget-bottom-large-banner img#tfrce-logo {}
+#tfrce-rally-widget-bottom-large-banner p#tfrce-body {}
+#tfrce-rally-widget-bottom-large-banner span#tfrce-heading {}
+#tfrce-rally-widget-bottom-large-banner span#tfrce-call-to-action-label {}
+#tfrce-rally-widget-bottom-large-banner a#tfrce-call-to-action {}
+#tfrce-rally-widget-bottom-large-banner button#tfrce-close-button {}
 
 /* Widget Version Three */
-#tfrce-rally-widget-version-3 {}
-#tfrce-rally-widget-version-3 img#tfrce-logo {}
-#tfrce-rally-widget-version-3 p#tfrce-body {}
-#tfrce-rally-widget-version-3 span#tfrce-heading {}
-#tfrce-rally-widget-version-3 span#tfrce-call-to-action-label {}
-#tfrce-rally-widget-version-3 a#tfrce-call-to-action {}
-#tfrce-rally-widget-version-3 button#tfrce-close-button {}
+#tfrce-rally-widget-center-modal {}
+#tfrce-rally-widget-center-modal img#tfrce-logo {}
+#tfrce-rally-widget-center-modal p#tfrce-body {}
+#tfrce-rally-widget-center-modal span#tfrce-heading {}
+#tfrce-rally-widget-center-modal span#tfrce-call-to-action-label {}
+#tfrce-rally-widget-center-modal a#tfrce-call-to-action {}
+#tfrce-rally-widget-center-modal button#tfrce-close-button {}
 
 /* Widget Version Four */
-#tfrce-rally-widget-version-4 {}
-#tfrce-rally-widget-version-4 img#tfrce-logo {}
-#tfrce-rally-widget-version-4 p#tfrce-body {}
-#tfrce-rally-widget-version-4 span#tfrce-heading {}
-#tfrce-rally-widget-version-4 span#tfrce-call-to-action-label {}
-#tfrce-rally-widget-version-4 a#tfrce-call-to-action {}
-#tfrce-rally-widget-version-4 button#tfrce-close-button {}
+#tfrce-rally-widget-bottom-large-banner.html {}
+#tfrce-rally-widget-bottom-large-banner.html img#tfrce-logo {}
+#tfrce-rally-widget-bottom-large-banner.html p#tfrce-body {}
+#tfrce-rally-widget-bottom-large-banner.html span#tfrce-heading {}
+#tfrce-rally-widget-bottom-large-banner.html span#tfrce-call-to-action-label {}
+#tfrce-rally-widget-bottom-large-banner.html a#tfrce-call-to-action {}
+#tfrce-rally-widget-bottom-large-banner.html button#tfrce-close-button {}
 
 /* Common Styles */
 .tfrce-call-to-action-gradient {
