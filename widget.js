@@ -36,7 +36,7 @@
 // Wrap widget in function to protect scope
 var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
 
-(function(widget_config){
+(function(window, widget_config){
 
   // Do configuration
 
@@ -95,11 +95,16 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
       } else {
         return true
       }
+    },
+    nearDC: function (callback) {
+      window.nearDC = callback;
+      var script = document.createElement('script');
+      script.src = '//geoip.taskforce.is/?callback=nearDC'
+      document.getElementsByTagName('head')[0].appendChild(script);
     }
   }
 
   // Define campaigns
-
 
   var campaign = {
     stopwatchingus: {
@@ -179,8 +184,16 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
           return false;
         }
 
-        // All checks passed, show campaign
-        active_campaign.show();
+        checks.nearDC(function (res) {
+          if(res.withinHundredKilometers) {
+
+          } else {
+            alert('You are not actually in range but this is beta so Im showing you dialog anyway');
+          }
+          // All checks passed, show campaign
+          active_campaign.show();
+        })
+
       }
     }
   }
@@ -194,4 +207,4 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
     return false;
   }
 
-})(_tfrce_config);
+})(window, _tfrce_config);
