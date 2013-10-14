@@ -13,6 +13,9 @@
 
   ===============================================================================
 
+  TODO 
+    - Use underscores or camelcase?
+
   <script type="text/javascript">
     window._idl = {};
     _idl.variant = "modal";
@@ -43,6 +46,29 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
   // Setup
   var active_campaign;
 
+  // Cookie helpers, taken from w3schools
+  function setCookie(c_name,value,exdays) {
+    var exdate=new Date();
+    exdate.setDate(exdate.getDate() + exdays);
+    var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+    document.cookie=c_name + "=" + c_value;
+  }
+
+  function getCookie(c_name) {
+    var c_value = document.cookie;
+    var c_start = c_value.indexOf(" " + c_name + "=");
+    if (c_start == -1) { c_start = c_value.indexOf(c_name + "="); };
+    if (c_start == -1) { 
+      c_value = null; 
+    } else {
+      c_start = c_value.indexOf("=", c_start) + 1;
+      var c_end = c_value.indexOf(";", c_start);
+      if (c_end == -1) { c_end = c_value.length; }
+      c_value = unescape(c_value.substring(c_start,c_end));
+    }
+    return c_value;
+  }
+
   // Define checks
 
   var checks = {
@@ -58,17 +84,26 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
     },
     isMobile: function() {
       var ismobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i);
-      return ismobile;
+      return ismobile ? false : true;
+    },
+    hasSeenCampaign: function (cookieName) {
+      var cookie = getCookie(cookieName)
+      console.log(cookie)
+      if(cookie === null) {
+        //setCookie(cookieName, 'true', 1);
+        return false;
+      } else {
+        return true
+      }
     }
   }
 
   // Define campaigns
 
-  //
-
 
   var campaign = {
     stopwatchingus: {
+      cookieName: 'stopwatchingus_hasseen2',
       startDate: new Date(2011, 10, 30, 0),
       endDate: new Date(2014, 10, 30, 0),
       hide: function (el, callback) {
@@ -93,12 +128,16 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
 
       },
       init: function () {
-        
+        // Check cookie for this campaign
+        if(checks.hasSeenCampaign(active_campaign.cookieName)) {
+          return false;
+        }
+
         // Check between date
         if(!checks.betweenDate(active_campaign.startDate, active_campaign.endDate)) {
           return false;
         }
-        
+
         // Check if is mobile
         if(!checks.isMobile()){
           return false;
@@ -114,7 +153,7 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
 
   if(typeof campaign[widget_config.campaign] !== 'undefined') {
     active_campaign = campaign[widget_config.campaign];
-    active_campaign.init();
+    active_campaign.init(widget_config);
   } else {
     return false;
   }
