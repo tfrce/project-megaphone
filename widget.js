@@ -115,18 +115,18 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
         var campaign_container = document.createElement('div');
         campaign_container.style.cssText = 'position:absolute;width:100%;top:0;opacity:1;z-index:100;background: #fff';
         var iframe_container = document.createElement('div');
-        iframe_container.style.cssText = 'position: relative; height: 100px;margin: 40px 40px 0px 40px;background: #444;border-radius: 4px;padding:0';
+        iframe_container.style.cssText = 'position: relative; height: 100px;margin: 40px 40px 0px 40px;background: #444;border-radius: 10px;';
         campaign_container.appendChild(iframe_container);
         
         document.body.appendChild(campaign_container);
         var iframe = document.createElement('iframe');
-        iframe.style.cssText = 'width: 100%;height: 100%;border: 0;margin:0; padding:0'
-        iframe.src = '../stopwatchingus/modal.html';
+        iframe.style.cssText = 'width: 100%;height: 100%;border: 0;margin:0; padding:0; border-radius: 10px;'
+        iframe.src = '../stopwatchingus/version1.html';
         iframe_container.appendChild(iframe);
         var closeButton = document.createElement('button');
         closeButton.style.cssText = 'position: absolute;top:0;right:0'
         closeButton.className = 'close-button';
-        closeButton.innerText = 'close-button';
+        closeButton.innerHTML = 'close-button';
         iframe_container.appendChild(closeButton);
         closeButton.onclick = function() {
           active_campaign.hide(campaign_container)
