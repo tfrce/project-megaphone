@@ -22,7 +22,7 @@ _idl.campaign = "defundnsa";
 })();
 </script>
 ```
-### What does the script do?
+## What does the script do?
 
 We popup a notification on your website, depending on which style you chose. The script is only 1kb and served off the cdnjs.com network.
 
@@ -31,3 +31,9 @@ We popup a notification on your website, depending on which style you chose. The
 * When a user closes the window it doesn't re-open for another 12 hours
 * We are only displaying this to desktop computers, and anyone on mobile devices won't see it
 
+## Examples
+
+* (Top Large Banner)[http://tfrce.github.io/widget/example/top_large_banner_example.html]
+* (Top Small Banner)[http://tfrce.github.io/widget/example/top_small_banner_example.html]
+* (Bottom Large Banner)[http://tfrce.github.io/widget/example/bottom_large_banner_example.html]
+* (Center Modal)[http://tfrce.github.io/widget/example/center_modal_example.html]
