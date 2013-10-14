@@ -1,0 +1,47 @@
+/* Widget Version One */
+#tfrce-rally-widget-version-1 {}
+#tfrce-rally-widget-version-1 img#tfrce-logo {}
+#tfrce-rally-widget-version-1 p#tfrce-body {}
+#tfrce-rally-widget-version-1 span#tfrce-heading {}
+#tfrce-rally-widget-version-1 span#tfrce-call-to-action-label {}
+#tfrce-rally-widget-version-1 a#tfrce-call-to-action {}
+#tfrce-rally-widget-version-1 button#tfrce-close-button {}
+
+/* Widget Version Two */
+#tfrce-rally-widget-version-2 {}
+#tfrce-rally-widget-version-2 img#tfrce-logo {}
+#tfrce-rally-widget-version-2 p#tfrce-body {}
+#tfrce-rally-widget-version-2 span#tfrce-heading {}
+#tfrce-rally-widget-version-2 span#tfrce-call-to-action-label {}
+#tfrce-rally-widget-version-2 a#tfrce-call-to-action {}
+#tfrce-rally-widget-version-2 button#tfrce-close-button {}
+
+/* Widget Version Three */
+#tfrce-rally-widget-version-3 {}
+#tfrce-rally-widget-version-3 img#tfrce-logo {}
+#tfrce-rally-widget-version-3 p#tfrce-body {}
+#tfrce-rally-widget-version-3 span#tfrce-heading {}
+#tfrce-rally-widget-version-3 span#tfrce-call-to-action-label {}
+#tfrce-rally-widget-version-3 a#tfrce-call-to-action {}
+#tfrce-rally-widget-version-3 button#tfrce-close-button {}
+
+/* Widget Version Four */
+#tfrce-rally-widget-version-4 {}
+#tfrce-rally-widget-version-4 img#tfrce-logo {}
+#tfrce-rally-widget-version-4 p#tfrce-body {}
+#tfrce-rally-widget-version-4 span#tfrce-heading {}
+#tfrce-rally-widget-version-4 span#tfrce-call-to-action-label {}
+#tfrce-rally-widget-version-4 a#tfrce-call-to-action {}
+#tfrce-rally-widget-version-4 button#tfrce-close-button {}
+
+/* Common Styles */
+.tfrce-call-to-action-gradient {
+    background: #70d549;
+    background: -moz-linear-gradient(top, #70d549 0%, #3d9826 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#70d549), color-stop(100%,#3d9826));
+    background: -webkit-linear-gradient(top, #70d549 0%,#3d9826 100%);
+    background: -o-linear-gradient(top, #70d549 0%,#3d9826 100%);
+    background: -ms-linear-gradient(top, #70d549 0%,#3d9826 100%);
+    background: linear-gradient(to bottom, #70d549 0%,#3d9826 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#70d549', endColorstr='#3d9826',GradientType=0 );
+}
