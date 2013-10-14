@@ -1,11 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #3f3f3f; /* Old browsers */
+    background: -moz-linear-gradient(top,  #3f3f3f 0%, #191919 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3f3f3f), color-stop(100%,#191919)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #3f3f3f 0%,#191919 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #3f3f3f 0%,#191919 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #3f3f3f 0%,#191919 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #3f3f3f 0%,#191919 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f3f3f', endColorstr='#191919',GradientType=0 ); /* IE6-9 */
+}
+
 /* Widget Version One */
-#tfrce-rally-widget-version-1 {}
-#tfrce-rally-widget-version-1 img#tfrce-logo {}
-#tfrce-rally-widget-version-1 p#tfrce-body {}
-#tfrce-rally-widget-version-1 span#tfrce-heading {}
-#tfrce-rally-widget-version-1 span#tfrce-call-to-action-label {}
-#tfrce-rally-widget-version-1 a#tfrce-call-to-action {}
-#tfrce-rally-widget-version-1 button#tfrce-close-button {}
+#tfrce-rally-widget-version-1 { position: fixed; top: 0; background: url('images/gradient-version-1.png'); height: 99px; width: 100%; color: #fff; font-family: 'Helvetica', 'Arial', sans-serif; position: relative; overflow: hidden; }
+#tfrce-rally-widget-version-1 img#tfrce-logo { float: left; margin: 15px; width: 122px; height: 68px; }
+#tfrce-rally-widget-version-1 p#tfrce-body { font-size: 15px; max-width: 500px; margin: 10px auto; text-align: center; padding: 0 20px 0 0; }
+#tfrce-rally-widget-version-1 span#tfrce-heading { background: url('images/tfrce-widget-heading.png'); display: block; width: 436px; height: 27px; margin: 0 auto; }
+#tfrce-rally-widget-version-1 div#tfrce-actions { float: right; }
+#tfrce-rally-widget-version-1 span#tfrce-call-to-action-label { font-size: 11px; color: #ddd; float: left; margin: 15px 0 5px; }
+#tfrce-rally-widget-version-1 a#tfrce-call-to-action { display: block; width: 200px; padding: 10px 0; border-radius: 5px; text-align: center; color: #fff; text-decoration: none; float: left; clear: left; }
+#tfrce-rally-widget-version-1 button#tfrce-close-button { background: url('images/close-button.png'); border: 0; height: 28px; width: 28px; cursor: pointer; float: right; margin: 0 20px 0 10px; }
 
 /* Widget Version Two */
 #tfrce-rally-widget-version-2 {}
