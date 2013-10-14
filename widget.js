@@ -40,32 +40,45 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
   widget_config.show_style = widget_config.show_style || 'modal';
   widget_config.campaign = widget_config.campaign || 'stopwatchingus';
 
+  // Setup
+  var active_campaign;
+
   // Define campaigns
 
   var campaign = {
     stopwatchingus: {
-
+      startDate: '',
+      endDate: '',
+      hide: function () {},
+      show: function () {},
+      init: function () {
+        var elemDiv = document.createElement('div');
+        elemDiv.style.cssText = 'position:absolute;width:100%;height:100px;top:0;opacity:1;z-index:100;background:#000;';
+        document.body.appendChild(elemDiv);
+        var iframe = document.createElement('iframe');
+        iframe.style.cssText = 'width: 100%;height: 100%;'
+        iframe.src = 'http://tfrce.github.io/widget/stopwatchingus/modal.html';
+        elemDiv.appendChild(iframe);
+        var closeButton = document.createElement('button');
+        closeButton.className = 'close-button';
+        closeButton.innerText = 'close-button';
+        elemDiv.appendChild(closeButton);
+        closeButton.onclick = function() {
+          elemDiv.remove();
+        }
+      }
     }
   }
 
   // Load campaign if exist
 
-
-
-  var elemDiv = document.createElement('div');
-  elemDiv.style.cssText = 'position:absolute;width:100%;height:100px;top:0;opacity:1;z-index:100;background:#000;';
-  document.body.appendChild(elemDiv);
-  var iframe = document.createElement('iframe');
-  iframe.style.cssText = 'width: 100%;height: 100%;'
-  iframe.src = 'http://tfrce.github.io/widget/stopwatchingus/modal.html';
-  elemDiv.appendChild(iframe);
-  var closeButton = document.createElement('button');
-  closeButton.className = 'close-button';
-  closeButton.innerText = 'close-button';
-  elemDiv.appendChild(closeButton);
-  closeButton.onclick = function() {
-    elemDiv.remove();
+  if(typeof campaign[widget_config.campaign] !== 'undefined') {
+    active_campaign = campaign[widget_config.campaign];
+    active_campaign.init();
+  } else {
+    return false;
   }
+
 
 
 })(_tfrce_config);
