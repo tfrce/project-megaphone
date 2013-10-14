@@ -47,10 +47,10 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
   var active_campaign;
 
   // Cookie helpers, taken from w3schools
-  function setCookie(c_name,value,exdays) {
-    var exdate=new Date();
-    exdate.setDate(exdate.getDate() + exdays);
-    var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+  function setCookie(c_name,value,seconds) {
+    var exdate = new Date(new Date().getTime() + seconds*1000);
+    console.log(new Date(), exdate);
+    var c_value=escape(value) + ((seconds==null) ? "" : "; expires="+exdate.toUTCString());
     document.cookie=c_name + "=" + c_value;
   }
 
@@ -103,11 +103,12 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
 
   var campaign = {
     stopwatchingus: {
-      cookieName: 'stopwatchingus_hasseen2',
+      cookieName: 'stopwatchingus_hasseen5',
       startDate: new Date(2011, 10, 30, 0),
       endDate: new Date(2014, 10, 30, 0),
       hide: function (el, callback) {
         el.remove();
+        setCookie(active_campaign.cookieName, 'true', 20);
         if(callback) { callback(); };
       },
       show: function () {
