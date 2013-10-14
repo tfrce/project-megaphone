@@ -136,7 +136,7 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
         document.body.appendChild(campaign_container);
         var iframe = document.createElement('iframe');
         iframe.style.cssText = style.iframe;
-        iframe.src = '../stopwatchingus/version1.html';
+        iframe.src = '../stopwatchingus/top_large_banner.html';
         iframe_container.appendChild(iframe);
         var closeButton = document.createElement('button');
         closeButton.style.cssText = style.closeButton;
