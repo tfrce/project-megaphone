@@ -7,29 +7,14 @@
 
   ===============================================================================
 
-  Taskforce Widget
   A generic widget include script which we will use to show further campaigns etc
-  <thomasalwyndavis@gmail.com> for support
+
+  <thomasalwyndavis@gmail.com> or http://taskforce.is for support
 
   ===============================================================================
 
   TODO 
     - Use underscores or camelcase?
-
-  <script type="text/javascript">
-    window._idl = {};
-    _idl.variant = "modal";
-    _idl.campaign = "defundnsa";
-    (function() {
-        var idl = document.createElement('script');
-        idl.type = 'text/javascript';
-        idl.async = true;
-        idl.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'members.internetdefenseleague.org/include/?url=' + (_idl.url || '') + '&_idl_test=1&campaign=' + (_idl.campaign || '') + '&variant=' + (_idl.variant || 'banner');
-        document.getElementsByTagName('body')[0].appendChild(idl);
-    })();
-  </script>
-
-  http://geoip.taskforce.is/64.64.64.64
 
 */
 
@@ -41,6 +26,8 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
   // Do configuration
 
   widget_config.show_style = widget_config.show_style || 'center_modal';
+  widget_config.disableGeo = widget_config.disableGeo || false;
+  widget_config.disableDate = widget_config.disableDate || false;
   widget_config.campaign = widget_config.campaign || 'stopwatchingus';
 
   // Setup
@@ -175,7 +162,7 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
         }
 
         // Check between date
-        if(!checks.betweenDate(active_campaign.startDate, active_campaign.endDate)) {
+        if(!checks.betweenDate(active_campaign.startDate, active_campaign.endDate) || active_campaign.config.disableDate) {
           return false;
         }
 
@@ -185,7 +172,7 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
         }
 
         checks.nearDC(function (res) {
-          if(res.withinHundredKilometers) {
+          if(res.withinHundredKilometers || active_campaign.config.disableGeo) {
 
           } else {
             alert('You are not actually in range but this is beta so Im showing you dialog anyway');
