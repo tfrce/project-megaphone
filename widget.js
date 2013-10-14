@@ -17,6 +17,8 @@
     })();
 </script>
 
+http://geoip.taskforce.is/64.64.64.64
+
 */
 
 
