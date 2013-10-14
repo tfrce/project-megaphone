@@ -13,6 +13,9 @@
 
   ===============================================================================
 
+  TODO 
+    - Use underscores or camelcase?
+
   <script type="text/javascript">
     window._idl = {};
     _idl.variant = "modal";
@@ -43,6 +46,29 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
   // Setup
   var active_campaign;
 
+  // Cookie helpers, taken from w3schools
+  function setCookie(c_name,value,seconds) {
+    var exdate = new Date(new Date().getTime() + seconds*1000);
+    console.log(new Date(), exdate);
+    var c_value=escape(value) + ((seconds==null) ? "" : "; expires="+exdate.toUTCString());
+    document.cookie=c_name + "=" + c_value;
+  }
+
+  function getCookie(c_name) {
+    var c_value = document.cookie;
+    var c_start = c_value.indexOf(" " + c_name + "=");
+    if (c_start == -1) { c_start = c_value.indexOf(c_name + "="); };
+    if (c_start == -1) { 
+      c_value = null; 
+    } else {
+      c_start = c_value.indexOf("=", c_start) + 1;
+      var c_end = c_value.indexOf(";", c_start);
+      if (c_end == -1) { c_end = c_value.length; }
+      c_value = unescape(c_value.substring(c_start,c_end));
+    }
+    return c_value;
+  }
+
   // Define checks
 
   var checks = {
@@ -58,47 +84,66 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
     },
     isMobile: function() {
       var ismobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i);
-      return ismobile;
+      return ismobile ? false : true;
+    },
+    hasSeenCampaign: function (cookieName) {
+      var cookie = getCookie(cookieName)
+      console.log(cookie)
+      if(cookie === null) {
+        //setCookie(cookieName, 'true', 1);
+        return false;
+      } else {
+        return true
+      }
     }
   }
 
   // Define campaigns
 
-  //
-
 
   var campaign = {
     stopwatchingus: {
+      cookieName: 'stopwatchingus_hasseen5',
       startDate: new Date(2011, 10, 30, 0),
       endDate: new Date(2014, 10, 30, 0),
       hide: function (el, callback) {
         el.remove();
+        setCookie(active_campaign.cookieName, 'true', 20);
         if(callback) { callback(); };
       },
       show: function () {
         var campaign_container = document.createElement('div');
-        campaign_container.style.cssText = 'position:absolute;width:100%;height:100px;top:0;opacity:1;z-index:100;background:#000;';
+        campaign_container.style.cssText = 'position:absolute;width:100%;top:0;opacity:1;z-index:100;background: #fff';
+        var iframe_container = document.createElement('div');
+        iframe_container.style.cssText = 'position: relative; height: 100px;margin: 40px 40px 0px 40px;background: #444;border-radius: 10px;';
+        campaign_container.appendChild(iframe_container);
+        
         document.body.appendChild(campaign_container);
         var iframe = document.createElement('iframe');
-        iframe.style.cssText = 'width: 100%;height: 100%;'
-        iframe.src = 'http://tfrce.github.io/widget/stopwatchingus/modal.html';
-        campaign_container.appendChild(iframe);
+        iframe.style.cssText = 'width: 100%;height: 100%;border: 0;margin:0; padding:0; border-radius: 10px;'
+        iframe.src = '../stopwatchingus/version1.html';
+        iframe_container.appendChild(iframe);
         var closeButton = document.createElement('button');
+        closeButton.style.cssText = 'position: absolute;top:0;right:0'
         closeButton.className = 'close-button';
-        closeButton.innerText = 'close-button';
-        campaign_container.appendChild(closeButton);
+        closeButton.innerHTML = 'close-button';
+        iframe_container.appendChild(closeButton);
         closeButton.onclick = function() {
           active_campaign.hide(campaign_container)
         }
 
       },
       init: function () {
-        
+        // Check cookie for this campaign
+        if(checks.hasSeenCampaign(active_campaign.cookieName)) {
+          return false;
+        }
+
         // Check between date
         if(!checks.betweenDate(active_campaign.startDate, active_campaign.endDate)) {
           return false;
         }
-        
+
         // Check if is mobile
         if(!checks.isMobile()){
           return false;
@@ -114,7 +159,7 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
 
   if(typeof campaign[widget_config.campaign] !== 'undefined') {
     active_campaign = campaign[widget_config.campaign];
-    active_campaign.init();
+    active_campaign.init(widget_config);
   } else {
     return false;
   }
