@@ -43,29 +43,69 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
   // Setup
   var active_campaign;
 
+  // Define checks
+
+  var checks = {
+    betweenDate: function(startDate, endDate) {
+      var startEpoch = startDate.getTime();
+      var endEpoch = endDate.getTime();
+      var currentEpoch = new Date().getTime();
+      if(currentEpoch > startEpoch && currentEpoch < endEpoch) {
+        return true;
+      } else {
+        return false;
+      }
+    },
+    isMobile: function() {
+      var ismobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i);
+      return ismobile;
+    }
+  }
+
   // Define campaigns
+
+  //
+
 
   var campaign = {
     stopwatchingus: {
-      startDate: '',
-      endDate: '',
-      hide: function () {},
-      show: function () {},
-      init: function () {
-        var elemDiv = document.createElement('div');
-        elemDiv.style.cssText = 'position:absolute;width:100%;height:100px;top:0;opacity:1;z-index:100;background:#000;';
-        document.body.appendChild(elemDiv);
+      startDate: new Date(2011, 10, 30, 0),
+      endDate: new Date(2014, 10, 30, 0),
+      hide: function (el, callback) {
+        el.remove();
+        if(callback) { callback(); };
+      },
+      show: function () {
+        var campaign_container = document.createElement('div');
+        campaign_container.style.cssText = 'position:absolute;width:100%;height:100px;top:0;opacity:1;z-index:100;background:#000;';
+        document.body.appendChild(campaign_container);
         var iframe = document.createElement('iframe');
         iframe.style.cssText = 'width: 100%;height: 100%;'
         iframe.src = 'http://tfrce.github.io/widget/stopwatchingus/modal.html';
-        elemDiv.appendChild(iframe);
+        campaign_container.appendChild(iframe);
         var closeButton = document.createElement('button');
         closeButton.className = 'close-button';
         closeButton.innerText = 'close-button';
-        elemDiv.appendChild(closeButton);
+        campaign_container.appendChild(closeButton);
         closeButton.onclick = function() {
-          elemDiv.remove();
+          active_campaign.hide(campaign_container)
         }
+
+      },
+      init: function () {
+        
+        // Check between date
+        if(!checks.betweenDate(active_campaign.startDate, active_campaign.endDate)) {
+          return false;
+        }
+        
+        // Check if is mobile
+        if(!checks.isMobile()){
+          return false;
+        }
+
+        // All checks passed, show campaign
+        active_campaign.show();
       }
     }
   }
@@ -78,7 +118,5 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
   } else {
     return false;
   }
-
-
 
 })(_tfrce_config);
