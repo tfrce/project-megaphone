@@ -36,7 +36,7 @@
 // Wrap widget in function to protect scope
 var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
 
-(function(widget_config){
+(function(window, widget_config){
 
   // Do configuration
 
@@ -95,11 +95,16 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
       } else {
         return true
       }
+    },
+    nearDC: function (callback) {
+      window.nearDC = callback;
+      var script = document.createElement('script');
+      script.src = '//geoip.taskforce.is/?callback=nearDC'
+      document.getElementsByTagName('head')[0].appendChild(script);
     }
   }
 
   // Define campaigns
-
 
   var campaign = {
     stopwatchingus: {
@@ -118,12 +123,29 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
           iframe: '',
           closeButton: ''
         },
-        banner: {
+        top_large_banner: {
           campaign_container: 'position:absolute;width:100%;top:0;opacity:1;z-index:100;background: #fff',
           iframe_container: 'position: relative; height: 100px;margin: 40px 40px 0px 40px;background: #444;border-radius: 10px;',
           iframe: 'width: 100%;height: 100%;border: 0;margin:0; padding:0; border-radius: 10px;',
-          closeButton: 'border: 0;height: 28px;width: 28px;cursor: pointer;position: absolute;top:34px;right:20px; background: url("../stopwatchingus/images/close-button.png");'
-
+          closeButton: 'border: 0;height: 28px;width: 28px;cursor: pointer;position: absolute;top:33px;right:20px; background: url("../stopwatchingus/images/close-button.png");'
+        },
+        bottom_large_banner: {
+          campaign_container: 'position:absolute;width:100%;bottom:0;opacity:1;z-index:100;background: #fff',
+          iframe_container: 'position: relative; height: 100px;margin: 00px 40px 40px 40px;background: #444;border-radius: 10px;',
+          iframe: 'width: 100%;height: 100%;border: 0;margin:0; padding:0; border-radius: 10px;',
+          closeButton: 'border: 0;height: 28px;width: 28px;cursor: pointer;position: absolute;top:33px;right:20px; background: url("../stopwatchingus/images/close-button.png");'
+        },
+        top_small_banner: {
+          campaign_container: 'position:absolute;width:100%;top:0;opacity:1;z-index:100;background: #fff',
+          iframe_container: 'position: relative; height: 100px;margin: 40px 40px 0px 40px;background: #444;border-radius: 10px;',
+          iframe: 'width: 100%;height: 100%;border: 0;margin:0; padding:0; border-radius: 10px;',
+          closeButton: 'border: 0;height: 28px;width: 28px;cursor: pointer;position: absolute;top:33px;right:20px; background: url("../stopwatchingus/images/close-button.png");'
+        },
+        center_modal: {
+          campaign_container: 'position:absolute;left: 50%; margin-left: -300px; width: 600px;top:0;opacity:1;z-index:100;background: #fff',
+          iframe_container: 'position: relative; height: 500px;margin: 40px 40px 0px 40px;background: #444;border-radius: 10px;',
+          iframe: 'width: 100%;height: 100%;border: 0;margin:0; padding:0; border-radius: 10px;',
+          closeButton: 'border: 0;height: 28px;width: 28px;cursor: pointer;position: absolute;top:33px;right:20px; background: url("../stopwatchingus/images/close-button.png");'
         }
       },
       show: function () {
@@ -136,7 +158,7 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
         document.body.appendChild(campaign_container);
         var iframe = document.createElement('iframe');
         iframe.style.cssText = style.iframe;
-        iframe.src = '../stopwatchingus/top_large_banner.html';
+        iframe.src = '../stopwatchingus/' + active_campaign.config.show_style;
         iframe_container.appendChild(iframe);
         var closeButton = document.createElement('button');
         closeButton.style.cssText = style.closeButton;
@@ -144,7 +166,6 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
         closeButton.onclick = function() {
           active_campaign.hide(campaign_container)
         }
-
       },
       init: function (config) {
         active_campaign.config = config;
@@ -163,8 +184,16 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
           return false;
         }
 
-        // All checks passed, show campaign
-        active_campaign.show();
+        checks.nearDC(function (res) {
+          if(res.withinHundredKilometers) {
+
+          } else {
+            alert('You are not actually in range but this is beta so Im showing you dialog anyway');
+          }
+          // All checks passed, show campaign
+          active_campaign.show();
+        })
+
       }
     }
   }
@@ -178,4 +207,4 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
     return false;
   }
 
-})(_tfrce_config);
+})(window, _tfrce_config);
