@@ -28,3 +28,19 @@ var causes = {
   }
 }
 
+var elemDiv = document.createElement('div');
+elemDiv.style.cssText = 'position:absolute;width:100%;height:100px;top:0;opacity:1;z-index:100;background:#000;';
+document.body.appendChild(elemDiv);
+var iframe = document.createElement('iframe');
+iframe.style.cssText = 'width: 100%;height: 100%;'
+iframe.src = 'http://tfrce.github.io/widget/stopwatchingus/modal.html';
+elemDiv.appendChild(iframe);
+var closeButton = document.createElement('button');
+closeButton.className = 'close-button';
+closeButton.innerText = 'close-button';
+elemDiv.appendChild(closeButton);
+closeButton.onclick = function() {
+  elemDiv.remove();
+}
+
+
