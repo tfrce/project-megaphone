@@ -12,7 +12,7 @@ body {
 }
 
 /* Widget Version One */
-#tfrce-rally-widget-top-large-banner { position: fixed; top: 0; background: url('images/gradient-top-large-banner.png'); height: 99px; width: 100%; color: #fff; font-family: 'Helvetica', 'Arial', sans-serif; position: relative; overflow: hidden; }
+#tfrce-rally-widget-top-large-banner { position: fixed; top: 0; height: 99px; width: 100%; color: #fff; font-family: 'Helvetica', 'Arial', sans-serif; position: relative; overflow: hidden; }
 #tfrce-rally-widget-top-large-banner img#tfrce-logo { float: left; margin: 15px; width: 122px; height: 68px; }
 #tfrce-rally-widget-top-large-banner p#tfrce-body { font-size: 15px; max-width: 500px; margin: 10px auto; text-align: center; padding: 0 20px 0 0; }
 #tfrce-rally-widget-top-large-banner span#tfrce-heading { background: url('images/tfrce-widget-heading.png'); display: block; width: 436px; height: 27px; margin: 0 auto; }
