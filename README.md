@@ -7,7 +7,7 @@ Help gain traction for the protest in Washington DC, sina can you fix this copy.
 
 Just copy and paste the code below into your website.
 
-__Place it before `</body>`, the script is optimized to not affect the performance of your website__
+_Place it before `</body>`, the script is optimized to not affect the performance of your website_
 
 ```html
 <script> 
@@ -30,7 +30,7 @@ By default
 * A cookie is set with a 24 hour expiry
 * We only display this to desktop computers, and anyone on mobile devices won't see it
 
-__These can all be changed via custom configuration which you can find further down the page__
+_These can all be changed via custom configuration which you can find further down the page_
 
 ## Examples
 
