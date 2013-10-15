@@ -188,9 +188,6 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
 
 
       },
-      navigate: function () {
-        window.open('https://rally.stopwatching.us','_blank');
-      },
       init: function (config) {
         active_campaign.config = config;
         // Check cookie for this campaign
@@ -223,7 +220,6 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
   if(typeof campaign[widget_config.campaign] !== 'undefined') {
     active_campaign = campaign[widget_config.campaign];
     active_campaign.init(widget_config);
-    window.tfrce_config.active_campaign = active_campaign;
   } else {
     return false;
   }
