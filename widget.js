@@ -122,36 +122,48 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
           campaign_container: 'position:fixed;width: 100%;top:0;opacity:1;z-index:100;',
           iframe_container: 'position: relative;height: 100px;margin: 20px 20px 0px 20px;background: #444;border-radius: 10px;',
           iframe: 'width: 100%;height: 100%;border: 0;margin:0;padding:0;border-radius: 10px;',
-          closeButton: 'border: 0;height: 28px;width: 28px;cursor: pointer;position: absolute;top:33px;right:20px;background: url("../stopwatchingus/images/close-button.png");'
+          closeButton: 'border: 0;height: 28px;width: 28px;cursor: pointer;position: absolute;top:33px;right:20px;background: url("' + ASSET_URL +'images/close-button.png");'
         },
         bottom_large_banner: {
           campaign_container: 'position:fixed;width:100%;bottom:0;opacity:1;z-index:100;background: #fff',
           iframe_container: 'position: relative;height: 100px;margin: 0px 20px 20px 20px;background: #444;border-radius: 10px;',
           iframe: 'width: 100%;height: 100%;border: 0;margin:0;padding:0;border-radius: 10px;',
-          closeButton: 'border: 0;height: 28px;width: 28px;cursor: pointer;position: absolute;top:33px;right:20px;background: url("../stopwatchingus/images/close-button.png");'
+          closeButton: 'border: 0;height: 28px;width: 28px;cursor: pointer;position: absolute;top:33px;right:20px;background: url("' + ASSET_URL +'images/close-button.png");'
         },
         top_small_banner: {
           campaign_container: 'position:fixed;width:100%;top:0;opacity:1;z-index:100;background: #fff',
           iframe_container: 'position: relative;height: 100px;margin: 20px 20px 0px 20px;background: #444;border-radius: 10px;',
           iframe: 'width: 100%;height: 100%;border: 0;margin:0;padding:0;border-radius: 10px;',
-          closeButton: 'border: 0;height: 28px;width: 28px;cursor: pointer;position: absolute;top:33px;right:20px;background: url("../stopwatchingus/images/close-button.png");'
+          closeButton: 'border: 0;height: 28px;width: 28px;cursor: pointer;position: absolute;top:33px;right:20px;background: url("' + ASSET_URL +'images/close-button.png");'
         },
         center_modal: {
-          campaign_container: 'position:fixed;left: 50%;margin-left: -250px;margin-top: 40px;width: 500px;top:0;opacity:1;z-index:100;background: #fff',
+          overlay: 'position: absolute; background: #000; width: 100%; height: 100%;z-index: 30;top: 0; left: 0; opacity: 0.5',
+          campaign_container: 'position:fixed;left: 50%;margin-left: -250px;margin-top: 40px;width: 500px;top:0;opacity:1;z-index:100;',
           iframe_container: 'position: relative;height: 325px; width: 500px;background: #444;border-radius: 10px;',
           iframe: 'width: 100%;height: 100%;border: 0;margin:0;padding:0;border-radius: 10px;',
-          closeButton: 'border: 0;height: 28px;width: 28px;cursor: pointer;position: absolute;top:15px;right:15px;background: url("../stopwatchingus/images/close-button.png");'
+          closeButton: 'border: 0;height: 28px;width: 28px;cursor: pointer;position: absolute;top:15px;right:15px;background: url("' + ASSET_URL +'images/close-button.png");'
         }
       },
       show: function () {
+
+        var style = active_campaign.styles[active_campaign.config.show_style]
+        
+        if(style.overlay) {
+          var overlay = document.createElement('div');
+          overlay.style.cssText = style.overlay;
+          document.body.appendChild(overlay);
+        }
+
+
         // Create a container
         var campaign_container = document.createElement('div');
-        var style = active_campaign.styles[active_campaign.config.show_style]
         campaign_container.style.cssText = style.campaign_container;
 
         // Create a container for the iframe so we can do padding and border-radius properly
         var iframe_container = document.createElement('div');
         iframe_container.style.cssText = style.iframe_container;
+
+
 
         // Append Iframe and campaign container to document
         campaign_container.appendChild(iframe_container);
@@ -171,6 +183,7 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
         iframe_container.appendChild(closeButton);
         closeButton.onclick = function() {
           active_campaign.hide(campaign_container)
+          overlay.remove();
         }
 
 
