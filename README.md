@@ -1,3 +1,5 @@
+We are still testing over the next 24 hours. Please help us test if you wish, but please don't share this link.
+
 # Rally Against Mass Surveillance
 
 Saturday October 26th is the 12th anniversary of the PATRIOT Act. 
