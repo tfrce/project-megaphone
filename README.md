@@ -1,7 +1,11 @@
+# Help Us Rally Against Mass Surveillance
 
-# Stop Watching Us - Website Widget
+Saturday October 26th is the 12th anniversary of the PATRIOT Act, one of the main laws that is being used by the government to surveil millions of people in the US and abroad. The EFF, ACLU, Fight for the Future, and dozens of other public advocacy groups are planning a rally in Washington, DC under the StopWatching.us coalition name to protest mass surveillance.
 
-Help gain traction for the protest in Washington DC, sina can you fix this copy.
+We've spent countless hours organizing buses to transport people from nearby cities, assembled a great lineup of speakers, and filed all the relevant permits. But **we need the help of startups and developers to drive attendance and get the word out**. Government surveillance is a grave challenge to privacy of the Internet, and threatens our ability to communicate and conduct transactions privately online.
+
+Help show Congress that we won't stand for surveillance by taking part in this campaign.
+
 
 ## Getting started
 
@@ -25,10 +29,10 @@ We popup a notification on your website, depending on which style you chose. The
 
 By default
 
-* The script is date activated, and will come online on only **between 23rd and the 28th**
-* We only display the widget for people in **100km radius of Washington DC**, based off their IP address
+* The script is date activated, and will come online on the 23rd and automatically shut off on the 28th
+* We only display the widget for people in 100km radius of Washington DC, based off their IP address
 * A cookie is set with a 24 hour expiry
-* We only display this to desktop computers, and anyone on **mobile devices won't see it**
+* We only display this to desktop computers, and anyone on mobile devices won't see it
 
 _These can all be changed via custom configuration which you can find further down the page_
 
@@ -46,10 +50,10 @@ The widget can be customized via a Javascript object
 ```html
 <script> 
   var tfrce_config = {
-    // Defaults
-    show_style: 'center_modal', // center_modal, top_large_banner, bottom_large_banner, bottom_smaller_banner
-    disableGeo: false, // If true, will show to all visitors not just those around Washington DC
-    disableDate: false, // If true, will run the widget indefinitely and not just inside the configured time frame
+    show_style: 'center_modal', // Default - center_modal, top_large_banner, bottom_large_banner, bottom_smaller_banner
+
+    disableGeo: false, // Default - If true, will show to all visitors not just those around Washington DC
+    disableDate: false, // Default - If true, will run the widget indefinitely and not just inside the configured time frame
   };
   (function(){
     var e = document.createElement('script'); e.type='text/javascript'; e.async = true;
