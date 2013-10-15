@@ -61,7 +61,7 @@ The widget can be customized via a Javascript object
   };
   (function(){
     var e = document.createElement('script'); e.type='text/javascript'; e.async = true;
-    e.src = document.location.protocol + '//cdnjs.cloudflare.com/ajax/libs/tfrce-widget/1/widget.min.js';
+    e.src = document.location.protocol + '//widget.taskforce.is/widget/widget.min.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s);
   })();
 </script>
