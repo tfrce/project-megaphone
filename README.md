@@ -8,7 +8,7 @@ Help gain traction for the protest in Washington DC, sina can you fix this copy.
 Just copy and paste the code below to include the script
 
 
-```javascript
+```html
 <script> 
   (function(){
     var e = document.createElement('script'); e.type='text/javascript'; e.async = true;
@@ -40,7 +40,7 @@ The widget can be customized via a Javascript object
 
 **You will most likely want to only change the style of the widget to one of the above examples
 
-```javascript
+```html
 <script> 
   var tfrce_config = {
     show_style: 'center_modal', // Default - center_modal, top_large_banner, bottom_large_banner, top_smaller_banner
