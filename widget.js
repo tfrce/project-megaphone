@@ -188,8 +188,10 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
         closeButton.style.cssText = style.closeButton;
         iframe_container.appendChild(closeButton);
         closeButton.onclick = function() {
-          active_campaign.hide(campaign_container)
-          overlay.remove();
+          active_campaign.hide(campaign_container);
+          if(style.overlay) {
+            overlay.remove();
+          }
         }
 
 
