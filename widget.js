@@ -27,11 +27,21 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
 
   widget_config.show_style = widget_config.show_style || 'center_modal';
   widget_config.disableGeo = widget_config.disableGeo || false;
+  widget_config.debug = widget_config.debug || false;
   widget_config.disableDate = widget_config.disableDate || false;
   widget_config.campaign = widget_config.campaign || 'stopwatchingus';
 
   // Setup
   var active_campaign;
+  var ASSET_URL, COOKIE_TIMEOUT;
+
+  if(widget_config.debug) {
+    ASSET_URL = '../stopwatchingus/';
+    COOKIE_TIMEOUT = 20;
+  } else {
+    ASSET_URL = '//widget.taskforce.is/widget/stopwatchingus/';
+    COOKIE_TIMEOUT = 43200;
+  }
 
   // Cookie helpers, taken from w3schools
   function setCookie(c_name,value,seconds) {
@@ -75,9 +85,7 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
     },
     hasSeenCampaign: function (cookieName) {
       var cookie = getCookie(cookieName)
-      console.log(cookie)
       if(cookie === null) {
-        //setCookie(cookieName, 'true', 1);
         return false;
       } else {
         return true
@@ -100,7 +108,7 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
       endDate: new Date(2014, 10, 30, 0),
       hide: function (el, callback) {
         el.remove();
-        setCookie(active_campaign.cookieName, 'true', 20);
+        setCookie(active_campaign.cookieName, 'true', COOKIE_TIMEOUT);
         if(callback) { callback(); };
       },
       styles: {
@@ -136,23 +144,36 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
         }
       },
       show: function () {
+        // Create a container
         var campaign_container = document.createElement('div');
         var style = active_campaign.styles[active_campaign.config.show_style]
         campaign_container.style.cssText = style.campaign_container;
+
+        // Create a container for the iframe so we can do padding and border-radius properly
         var iframe_container = document.createElement('div');
         iframe_container.style.cssText = style.iframe_container;
+
+        // Append Iframe and campaign container to document
         campaign_container.appendChild(iframe_container);
         document.body.appendChild(campaign_container);
+
+
         var iframe = document.createElement('iframe');
         iframe.style.cssText = style.iframe;
-        iframe.src = '../stopwatchingus/' + active_campaign.config.show_style + '.html';
+
+        // Set the source of the iframe to the configured show_style type
+        iframe.src = ASSET_URL + active_campaign.config.show_style + '.html';
         iframe_container.appendChild(iframe);
+
+        // Setup a close button
         var closeButton = document.createElement('button');
         closeButton.style.cssText = style.closeButton;
         iframe_container.appendChild(closeButton);
         closeButton.onclick = function() {
           active_campaign.hide(campaign_container)
         }
+
+
       },
       init: function (config) {
         active_campaign.config = config;
