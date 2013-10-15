@@ -49,44 +49,35 @@ body {
     #tfrce-rally-widget-top-large-banner a#tfrce-call-to-action { width: 160px; }
 }
 
-/* Widget Version Two */
+/* Bottom Large: Widget Version Two */
 #tfrce-rally-widget-bottom-large-banner { color: #fff; font-family: 'Lucida Grande', 'Arial', sans-serif; position: relative; overflow: hidden; }
-#tfrce-rally-widget-bottom-large-banner img#tfrce-logo { float: left; margin: 15px 0 0 15px; width: 122px; height: 68px; }
-#tfrce-rally-widget-bottom-large-banner div#tfrce-content { width: 550px; margin: 0 auto; }
+#tfrce-rally-widget-bottom-large-banner div#tfrce-eye { float:left; width: 17%; text-align:center;}
+#tfrce-rally-widget-bottom-large-banner img#tfrce-logo { margin: 15px 0; width: 122px;}
+#tfrce-rally-widget-bottom-large-banner div#tfrce-content { width: 53%; float:left; text-align:center; }
 #tfrce-rally-widget-bottom-large-banner p.tfrce-body { font-size: 16px; color: #eee; max-width: 550px; margin: 10px auto; text-align: center; }
-#tfrce-rally-widget-bottom-large-banner span#tfrce-heading { background: url('images/tfrce-widget-heading.png'); display: block; max-width: 436px; height: 27px; margin: 0 auto; }
-#tfrce-rally-widget-bottom-large-banner div#tfrce-actions { float: right; margin: 0 67px 0 0; }
+#tfrce-rally-widget-bottom-large-banner span#tfrce-heading { }
+#tfrce-rally-widget-bottom-large-banner div#tfrce-actions { float: right; width:28%; }
 #tfrce-rally-widget-bottom-large-banner span#tfrce-call-to-action-label { font-size: 12px; color: #ddd; float: left; margin: 18px 0 5px; }
 #tfrce-rally-widget-bottom-large-banner a#tfrce-call-to-action { display: block; width: 210px; padding: 10px 0; border-radius: 5px; text-align: center; color: #fff; text-decoration: none; float: left; clear: left; margin: 0 0 0 10px; }
 
-@media ( max-width: 1200px ) { 
-    #tfrce-rally-widget-bottom-large-banner img#tfrce-logo { width: 91px; height: 51px; margin: 25px 0 0 15px; }
-    #tfrce-rally-widget-bottom-large-banner div#tfrce-content { margin: 0 35% 0 15%; }
-    #tfrce-rally-widget-bottom-large-banner p.tfrce-body { font-size: 14px; }
-    #tfrce-rally-widget-bottom-large-banner span#tfrce-heading { width: 287px; height: 18px; background-size: 287px 18px; }
-    #tfrce-rally-widget-bottom-large-banner div#tfrce-actions { }
-    #tfrce-rally-widget-bottom-large-banner span#tfrce-call-to-action-label {  }
-    #tfrce-rally-widget-bottom-large-banner a#tfrce-call-to-action { width: 180px; }
+@media ( max-width: 1080px ) {
+#tfrce-rally-widget-bottom-large-banner p.tfrce-body { font-size: 15px; }
 }
 
-@media ( max-width: 1000px ) {
-    #tfrce-rally-widget-bottom-large-banner img#tfrce-logo { width: 80px; height: 44px; margin: 30px 0 0 15px; }
-    #tfrce-rally-widget-bottom-large-banner div#tfrce-content { margin: 0 40% 0 10%; }
-    #tfrce-rally-widget-bottom-large-banner p.tfrce-body { font-size: 13px; max-width: 500px; }
-    #tfrce-rally-widget-bottom-large-banner span#tfrce-heading { width: 287px; height: 18px; background-size: 287px 18px; }
-    #tfrce-rally-widget-bottom-large-banner div#tfrce-actions { margin: 0 40px 0 0; }
-    #tfrce-rally-widget-bottom-large-banner span#tfrce-call-to-action-label { font-size: 11px; }
-    #tfrce-rally-widget-bottom-large-banner a#tfrce-call-to-action { width: 160px; }
+@media ( max-width: 970px ) {
+#tfrce-rally-widget-bottom-large-banner p.tfrce-body { font-size: 13px; }
+#tfrce-rally-widget-bottom-large-banner a#tfrce-call-to-action {  width: 170px; }
+#tfrce-rally-widget-bottom-large-banner span#tfrce-call-to-action-label {font-size:10px;}
 }
 
-@media ( max-width: 900px ) {
-    #tfrce-rally-widget-bottom-large-banner img#tfrce-logo { width: 80px; height: 44px; }
-    #tfrce-rally-widget-bottom-large-banner div#tfrce-content { margin: 0 45% 0 5%; }
-    #tfrce-rally-widget-bottom-large-banner p.tfrce-body { font-size: 12px; max-width: 400px; }
-    #tfrce-rally-widget-bottom-large-banner span#tfrce-heading { width: 218px; height: 14px; background-size: 218px 14px;  }
-    #tfrce-rally-widget-bottom-large-banner div#tfrce-actions { margin: 0 35px 0 0; }
-    #tfrce-rally-widget-bottom-large-banner span#tfrce-call-to-action-label { font-size: 10px; }
-    #tfrce-rally-widget-bottom-large-banner a#tfrce-call-to-action { width: 160px; }
+@media ( max-width: 840px ) {
+#tfrce-rally-widget-bottom-large-banner p.tfrce-body { font-size: 13px; }
+#tfrce-rally-widget-bottom-large-banner div#tfrce-content { width: 55%; float:left; text-align:center; margin: 0 20px; }
+#tfrce-rally-widget-bottom-large-banner div#tfrce-actions {float:left;} 
+#tfrce-rally-widget-bottom-large-banner img#tfrce-logo { margin: 15px 0; display:none;}
+#tfrce-rally-widget-bottom-large-banner a#tfrce-call-to-action {  width: 90%; margin-top:28px;}
+#tfrce-rally-widget-bottom-large-banner span#tfrce-call-to-action-label { display: none;}
+#tfrce-rally-widget-bottom-large-banner span#tfrce-heading img { max-width:90%; }
 }
 
 /* Modal: Widget Version Three */
