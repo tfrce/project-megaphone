@@ -57,6 +57,7 @@ body {
 #tfrce-rally-widget-bottom-large-banner p.tfrce-body { font-size: 16px; color: #eee; max-width: 550px; margin: 10px auto; text-align: center; }
 #tfrce-rally-widget-bottom-large-banner span#tfrce-heading { }
 #tfrce-rally-widget-bottom-large-banner div#tfrce-actions { float: right; width:28%; }
+#tfrce-rally-widget-bottom-large-banner a#tfrce-call-to-action-label { font-size: 12px; color: #ddd; float: left; margin: 18px 0 5px 18px; }
 #tfrce-rally-widget-bottom-large-banner span#tfrce-call-to-action-label { font-size: 12px; color: #ddd; float: left; margin: 18px 0 5px; }
 #tfrce-rally-widget-bottom-large-banner a#tfrce-call-to-action { display: block; width: 210px; padding: 10px 0; border-radius: 5px; text-align: center; color: #fff; text-decoration: none; float: left; clear: left; margin: 0 0 0 10px; }
 

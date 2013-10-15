@@ -30,6 +30,7 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
   widget_config.debug = widget_config.debug || false;
   widget_config.disableDate = widget_config.disableDate || false;
   widget_config.campaign = widget_config.campaign || 'stopwatchingus';
+  widget_config.cookieTimeout = widget_config.cookieTimeout || 86400;
 
   // Setup
   var active_campaign;
@@ -40,7 +41,7 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
     COOKIE_TIMEOUT = 20;
   } else {
     ASSET_URL = '//widget.taskforce.is/widget/stopwatchingus/';
-    COOKIE_TIMEOUT = 43200;
+    COOKIE_TIMEOUT = widget_config.cookieTimeout;
   }
 
   // Cookie helpers, taken from w3schools
@@ -130,6 +131,12 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
           iframe: 'width: 100%;height: 100%;border: 0;margin:0;padding:0;border-radius: 10px;',
           closeButton: 'border: 0;height: 28px;width: 28px;cursor: pointer;position: absolute;top:33px;right:20px;background: url("' + ASSET_URL +'images/close-button.png");'
         },
+        large_banner_dev: {
+          campaign_container: 'position:fixed;width:100%;bottom:0;z-index:100; padding: 0 20px;',
+          iframe_container: 'position: relative; height: 100px; max-width:1201px; margin: 0px auto 8px auto; background: #444;border-radius: 10px;',
+          iframe: 'width: 100%;height: 100%;border: 0;margin:0;padding:0;border-radius: 10px;',
+          closeButton: 'border: 0;height: 28px;width: 28px;cursor: pointer;position: absolute;top:33px;right:20px;background: url("' + ASSET_URL +'images/close-button.png");'
+        },
         top_small_banner: {
           campaign_container: 'position:fixed;width:100%;top:0;opacity:1;z-index:100;',
           iframe_container: 'position: relative;height: 100px;margin: 20px 20px 0px 20px;background: #444;border-radius: 10px;',
@@ -213,12 +220,16 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
           return false;
         }
 
-        checks.nearDC(function (res) {
-          if(res.withinHundredKilometers || active_campaign.config.disableGeo) {
-            active_campaign.show();
-          }
-        })
-
+        // Check if they are near Washington?
+        if(active_campaign.config.disableGeo) {
+          active_campaign.show();
+        } else {
+          checks.nearDC(function (res) {
+            if(res.withinHundredKilometers) {
+              active_campaign.show();
+            }
+          })
+        }
       }
     }
   }
