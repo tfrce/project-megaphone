@@ -2,8 +2,10 @@ We are still testing over the next 24 hours. Please help us test if you wish, bu
 
 # Operation Multiplex: Rally Against Surveillance
 
+
 > ".. empires and nation-states weren’t organs of global human perception. They had their many eyes, certainly, but they didn’t constitute a single multiplex eye for the entire human species."
-> - William Gibson
+> William Gibson
+
 
 Saturday October 26th is the 12th anniversary of the PATRIOT Act. 
 
