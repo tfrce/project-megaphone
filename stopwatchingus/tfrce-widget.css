@@ -15,7 +15,7 @@ body {
 #tfrce-rally-widget-top-large-banner { color: #fff; font-family: 'Lucida Grande', 'Arial', sans-serif; position: relative; overflow: hidden; }
 #tfrce-rally-widget-top-large-banner img#tfrce-logo { float: left; margin: 15px 0 0 15px; width: 122px; height: 68px; }
 #tfrce-rally-widget-top-large-banner div#tfrce-content { width: 550px; margin: 0 auto; }
-#tfrce-rally-widget-top-large-banner p#tfrce-body { font-size: 16px; color: #eee; max-width: 550px; margin: 10px auto; text-align: center; }
+#tfrce-rally-widget-top-large-banner p.tfrce-body { font-size: 16px; color: #eee; max-width: 550px; margin: 10px auto; text-align: center; }
 #tfrce-rally-widget-top-large-banner span#tfrce-heading { background: url('images/tfrce-widget-heading.png'); display: block; max-width: 436px; height: 27px; margin: 0 auto; }
 #tfrce-rally-widget-top-large-banner div#tfrce-actions { float: right; margin: 0 67px 0 0; }
 #tfrce-rally-widget-top-large-banner span#tfrce-call-to-action-label { font-size: 12px; color: #ddd; float: left; margin: 18px 0 5px; }
@@ -24,7 +24,7 @@ body {
 @media ( max-width: 1200px ) { 
     #tfrce-rally-widget-top-large-banner img#tfrce-logo { width: 91px; height: 51px; margin: 25px 0 0 15px; }
     #tfrce-rally-widget-top-large-banner div#tfrce-content { margin: 0 35% 0 15%; }
-    #tfrce-rally-widget-top-large-banner p#tfrce-body { font-size: 14px; }
+    #tfrce-rally-widget-top-large-banner p.tfrce-body { font-size: 14px; }
     #tfrce-rally-widget-top-large-banner span#tfrce-heading { width: 287px; height: 18px; background-size: 287px 18px; }
     #tfrce-rally-widget-top-large-banner div#tfrce-actions { }
     #tfrce-rally-widget-top-large-banner span#tfrce-call-to-action-label {  }
@@ -34,7 +34,7 @@ body {
 @media ( max-width: 1000px ) {
     #tfrce-rally-widget-top-large-banner img#tfrce-logo { width: 80px; height: 44px; margin: 30px 0 0 15px; }
     #tfrce-rally-widget-top-large-banner div#tfrce-content { margin: 0 40% 0 10%; }
-    #tfrce-rally-widget-top-large-banner p#tfrce-body { font-size: 13px; max-width: 500px; }
+    #tfrce-rally-widget-top-large-banner p.tfrce-body { font-size: 13px; max-width: 500px; }
     #tfrce-rally-widget-top-large-banner span#tfrce-heading { width: 287px; height: 18px; background-size: 287px 18px; }
     #tfrce-rally-widget-top-large-banner div#tfrce-actions { margin: 0 40px 0 0; }
     #tfrce-rally-widget-top-large-banner span#tfrce-call-to-action-label { font-size: 11px; }
@@ -44,7 +44,7 @@ body {
 @media ( max-width: 900px ) {
     #tfrce-rally-widget-top-large-banner img#tfrce-logo { width: 80px; height: 44px; }
     #tfrce-rally-widget-top-large-banner div#tfrce-content { margin: 0 45% 0 5%; }
-    #tfrce-rally-widget-top-large-banner p#tfrce-body { font-size: 12px; max-width: 400px; }
+    #tfrce-rally-widget-top-large-banner p.tfrce-body { font-size: 12px; max-width: 400px; }
     #tfrce-rally-widget-top-large-banner span#tfrce-heading { width: 218px; height: 14px; background-size: 218px 14px;  }
     #tfrce-rally-widget-top-large-banner div#tfrce-actions { margin: 0 35px 0 0; }
     #tfrce-rally-widget-top-large-banner span#tfrce-call-to-action-label { font-size: 10px; }
@@ -55,7 +55,7 @@ body {
 #tfrce-rally-widget-bottom-large-banner { color: #fff; font-family: 'Lucida Grande', 'Arial', sans-serif; position: relative; overflow: hidden; }
 #tfrce-rally-widget-bottom-large-banner img#tfrce-logo { float: left; margin: 15px 0 0 15px; width: 122px; height: 68px; }
 #tfrce-rally-widget-bottom-large-banner div#tfrce-content { width: 550px; margin: 0 auto; }
-#tfrce-rally-widget-bottom-large-banner p#tfrce-body { font-size: 16px; color: #eee; max-width: 550px; margin: 10px auto; text-align: center; }
+#tfrce-rally-widget-bottom-large-banner p.tfrce-body { font-size: 16px; color: #eee; max-width: 550px; margin: 10px auto; text-align: center; }
 #tfrce-rally-widget-bottom-large-banner span#tfrce-heading { background: url('images/tfrce-widget-heading.png'); display: block; max-width: 436px; height: 27px; margin: 0 auto; }
 #tfrce-rally-widget-bottom-large-banner div#tfrce-actions { float: right; margin: 0 67px 0 0; }
 #tfrce-rally-widget-bottom-large-banner span#tfrce-call-to-action-label { font-size: 12px; color: #ddd; float: left; margin: 18px 0 5px; }
@@ -64,7 +64,7 @@ body {
 @media ( max-width: 1200px ) { 
     #tfrce-rally-widget-bottom-large-banner img#tfrce-logo { width: 91px; height: 51px; margin: 25px 0 0 15px; }
     #tfrce-rally-widget-bottom-large-banner div#tfrce-content { margin: 0 35% 0 15%; }
-    #tfrce-rally-widget-bottom-large-banner p#tfrce-body { font-size: 14px; }
+    #tfrce-rally-widget-bottom-large-banner p.tfrce-body { font-size: 14px; }
     #tfrce-rally-widget-bottom-large-banner span#tfrce-heading { width: 287px; height: 18px; background-size: 287px 18px; }
     #tfrce-rally-widget-bottom-large-banner div#tfrce-actions { }
     #tfrce-rally-widget-bottom-large-banner span#tfrce-call-to-action-label {  }
@@ -74,7 +74,7 @@ body {
 @media ( max-width: 1000px ) {
     #tfrce-rally-widget-bottom-large-banner img#tfrce-logo { width: 80px; height: 44px; margin: 30px 0 0 15px; }
     #tfrce-rally-widget-bottom-large-banner div#tfrce-content { margin: 0 40% 0 10%; }
-    #tfrce-rally-widget-bottom-large-banner p#tfrce-body { font-size: 13px; max-width: 500px; }
+    #tfrce-rally-widget-bottom-large-banner p.tfrce-body { font-size: 13px; max-width: 500px; }
     #tfrce-rally-widget-bottom-large-banner span#tfrce-heading { width: 287px; height: 18px; background-size: 287px 18px; }
     #tfrce-rally-widget-bottom-large-banner div#tfrce-actions { margin: 0 40px 0 0; }
     #tfrce-rally-widget-bottom-large-banner span#tfrce-call-to-action-label { font-size: 11px; }
@@ -84,7 +84,7 @@ body {
 @media ( max-width: 900px ) {
     #tfrce-rally-widget-bottom-large-banner img#tfrce-logo { width: 80px; height: 44px; }
     #tfrce-rally-widget-bottom-large-banner div#tfrce-content { margin: 0 45% 0 5%; }
-    #tfrce-rally-widget-bottom-large-banner p#tfrce-body { font-size: 12px; max-width: 400px; }
+    #tfrce-rally-widget-bottom-large-banner p.tfrce-body { font-size: 12px; max-width: 400px; }
     #tfrce-rally-widget-bottom-large-banner span#tfrce-heading { width: 218px; height: 14px; background-size: 218px 14px;  }
     #tfrce-rally-widget-bottom-large-banner div#tfrce-actions { margin: 0 35px 0 0; }
     #tfrce-rally-widget-bottom-large-banner span#tfrce-call-to-action-label { font-size: 10px; }
@@ -93,49 +93,19 @@ body {
 
 /* Widget Version Three */
 #tfrce-rally-widget-center-modal { color: #fff; font-family: 'Lucida Grande', 'Arial', sans-serif; position: relative; overflow: hidden; }
-#tfrce-rally-widget-center-modal img#tfrce-logo { float: left; margin: 15px 0 0 15px; width: 122px; height: 68px; }
-#tfrce-rally-widget-center-modal div#tfrce-content { width: 550px; margin: 0 auto; }
-#tfrce-rally-widget-center-modal p#tfrce-body { font-size: 16px; color: #eee; max-width: 550px; margin: 10px auto; text-align: center; }
+#tfrce-rally-widget-center-modal img#tfrce-logo { margin: 30px auto 15px; width: 122px; height: 68px; display: block; }
+#tfrce-rally-widget-center-modal div#tfrce-content { width: 436px; margin: 20px auto; }
+#tfrce-rally-widget-center-modal p.tfrce-body { font-size: 16px; color: #eee; max-width: 436px; margin: 10px auto; text-align: center; }
 #tfrce-rally-widget-center-modal span#tfrce-heading { background: url('images/tfrce-widget-heading.png'); display: block; max-width: 436px; height: 27px; margin: 0 auto; }
-#tfrce-rally-widget-center-modal div#tfrce-actions { float: right; margin: 0 67px 0 0; }
-#tfrce-rally-widget-center-modal span#tfrce-call-to-action-label { font-size: 12px; color: #ddd; float: left; margin: 18px 0 5px; }
-#tfrce-rally-widget-center-modal a#tfrce-call-to-action { display: block; width: 210px; padding: 10px 0; border-radius: 5px; text-align: center; color: #fff; text-decoration: none; float: left; clear: left; margin: 0 0 0 10px; }
-
-@media ( max-width: 1200px ) { 
-    #tfrce-rally-widget-center-modal img#tfrce-logo { width: 91px; height: 51px; margin: 25px 0 0 15px; }
-    #tfrce-rally-widget-center-modal div#tfrce-content { margin: 0 35% 0 15%; }
-    #tfrce-rally-widget-center-modal p#tfrce-body { font-size: 14px; }
-    #tfrce-rally-widget-center-modal span#tfrce-heading { width: 287px; height: 18px; background-size: 287px 18px; }
-    #tfrce-rally-widget-center-modal div#tfrce-actions { }
-    #tfrce-rally-widget-center-modal span#tfrce-call-to-action-label {  }
-    #tfrce-rally-widget-center-modal a#tfrce-call-to-action { width: 180px; }
-}
-
-@media ( max-width: 1000px ) {
-    #tfrce-rally-widget-center-modal img#tfrce-logo { width: 80px; height: 44px; margin: 30px 0 0 15px; }
-    #tfrce-rally-widget-center-modal div#tfrce-content { margin: 0 40% 0 10%; }
-    #tfrce-rally-widget-center-modal p#tfrce-body { font-size: 13px; max-width: 500px; }
-    #tfrce-rally-widget-center-modal span#tfrce-heading { width: 287px; height: 18px; background-size: 287px 18px; }
-    #tfrce-rally-widget-center-modal div#tfrce-actions { margin: 0 40px 0 0; }
-    #tfrce-rally-widget-center-modal span#tfrce-call-to-action-label { font-size: 11px; }
-    #tfrce-rally-widget-center-modal a#tfrce-call-to-action { width: 160px; }
-}
-
-@media ( max-width: 900px ) {
-    #tfrce-rally-widget-center-modal img#tfrce-logo { width: 80px; height: 44px; }
-    #tfrce-rally-widget-center-modal div#tfrce-content { margin: 0 45% 0 5%; }
-    #tfrce-rally-widget-center-modal p#tfrce-body { font-size: 12px; max-width: 400px; }
-    #tfrce-rally-widget-center-modal span#tfrce-heading { width: 218px; height: 14px; background-size: 218px 14px;  }
-    #tfrce-rally-widget-center-modal div#tfrce-actions { margin: 0 35px 0 0; }
-    #tfrce-rally-widget-center-modal span#tfrce-call-to-action-label { font-size: 10px; }
-    #tfrce-rally-widget-center-modal a#tfrce-call-to-action { width: 160px; }
-}
+#tfrce-rally-widget-center-modal div#tfrce-actions {}
+#tfrce-rally-widget-center-modal span#tfrce-call-to-action-label { font-size: 12px; color: #ddd; text-align: center; display: block; }
+#tfrce-rally-widget-center-modal a#tfrce-call-to-action { display: block; width: 250px; padding: 10px 0; border-radius: 5px; text-align: center; color: #fff; text-decoration: none; margin: 0 auto 15px; }
 
 /* Widget Version Four */
 #tfrce-rally-widget-top-small-banner { color: #fff; font-family: 'Lucida Grande', 'Arial', sans-serif; position: relative; overflow: hidden; }
 #tfrce-rally-widget-top-small-banner img#tfrce-logo { float: left; margin: 15px 0 0 15px; width: 122px; height: 68px; }
 #tfrce-rally-widget-top-small-banner div#tfrce-content { width: 550px; margin: 0 auto; }
-#tfrce-rally-widget-top-small-banner p#tfrce-body { font-size: 16px; color: #eee; max-width: 550px; margin: 10px auto; text-align: center; }
+#tfrce-rally-widget-top-small-banner p.tfrce-body { font-size: 16px; color: #eee; max-width: 550px; margin: 10px auto; text-align: center; }
 #tfrce-rally-widget-top-small-banner span#tfrce-heading { background: url('images/tfrce-widget-heading.png'); display: block; max-width: 436px; height: 27px; margin: 0 auto; }
 #tfrce-rally-widget-top-small-banner div#tfrce-actions { float: right; margin: 0 67px 0 0; }
 #tfrce-rally-widget-top-small-banner span#tfrce-call-to-action-label { font-size: 12px; color: #ddd; float: left; margin: 18px 0 5px; }
@@ -144,7 +114,7 @@ body {
 @media ( max-width: 1200px ) { 
     #tfrce-rally-widget-top-small-banner img#tfrce-logo { width: 91px; height: 51px; margin: 25px 0 0 15px; }
     #tfrce-rally-widget-top-small-banner div#tfrce-content { margin: 0 35% 0 15%; }
-    #tfrce-rally-widget-top-small-banner p#tfrce-body { font-size: 14px; }
+    #tfrce-rally-widget-top-small-banner p.tfrce-body { font-size: 14px; }
     #tfrce-rally-widget-top-small-banner span#tfrce-heading { width: 287px; height: 18px; background-size: 287px 18px; }
     #tfrce-rally-widget-top-small-banner div#tfrce-actions { }
     #tfrce-rally-widget-top-small-banner span#tfrce-call-to-action-label {  }
@@ -154,7 +124,7 @@ body {
 @media ( max-width: 1000px ) {
     #tfrce-rally-widget-top-small-banner img#tfrce-logo { width: 80px; height: 44px; margin: 30px 0 0 15px; }
     #tfrce-rally-widget-top-small-banner div#tfrce-content { margin: 0 40% 0 10%; }
-    #tfrce-rally-widget-top-small-banner p#tfrce-body { font-size: 13px; max-width: 500px; }
+    #tfrce-rally-widget-top-small-banner p.tfrce-body { font-size: 13px; max-width: 500px; }
     #tfrce-rally-widget-top-small-banner span#tfrce-heading { width: 287px; height: 18px; background-size: 287px 18px; }
     #tfrce-rally-widget-top-small-banner div#tfrce-actions { margin: 0 40px 0 0; }
     #tfrce-rally-widget-top-small-banner span#tfrce-call-to-action-label { font-size: 11px; }
@@ -164,7 +134,7 @@ body {
 @media ( max-width: 900px ) {
     #tfrce-rally-widget-top-small-banner img#tfrce-logo { width: 80px; height: 44px; }
     #tfrce-rally-widget-top-small-banner div#tfrce-content { margin: 0 45% 0 5%; }
-    #tfrce-rally-widget-top-small-banner p#tfrce-body { font-size: 12px; max-width: 400px; }
+    #tfrce-rally-widget-top-small-banner p.tfrce-body { font-size: 12px; max-width: 400px; }
     #tfrce-rally-widget-top-small-banner span#tfrce-heading { width: 218px; height: 14px; background-size: 218px 14px;  }
     #tfrce-rally-widget-top-small-banner div#tfrce-actions { margin: 0 35px 0 0; }
     #tfrce-rally-widget-top-small-banner span#tfrce-call-to-action-label { font-size: 10px; }
