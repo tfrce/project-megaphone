@@ -67,12 +67,20 @@
       </div>
 
     </div> <!-- /container -->
+
     <script> 
-		var tfrce_config = {
-			show_style: 'center_modal'
-		}
+      var tfrce_config = {
+        show_style: 'center_modal',
+        disableGeo: true
+      };
+      (function(){
+        var e = document.createElement('script'); e.type='text/javascript'; e.async = true;
+        e.src = '../widget.js';
+        //e.src = document.location.protocol + '//yourdomain.com/packaged_third_party_javascript.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s);
+      })();
     </script>
-	<script src="../widget.js"></script>
+  
 
 
     <!-- Bootstrap core JavaScript
