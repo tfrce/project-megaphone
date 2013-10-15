@@ -15,7 +15,7 @@
 
   TODO 
     - Use underscores or camelcase?
-
+  
 */
 
 // Wrap widget in function to protect scope
