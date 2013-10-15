@@ -91,41 +91,40 @@ body {
 #tfrce-rally-widget-center-modal a#tfrce-call-to-action { display: block; width: 250px; padding: 10px 0; border-radius: 5px; text-align: center; color: #fff; text-decoration: none; margin: 0 auto 5px; }
 
 /* Widget Version Four */
-#tfrce-rally-widget-top-small-banner { color: #fff; font-family: 'Lucida Grande', 'Arial', sans-serif; position: relative; overflow: hidden; }
-#tfrce-rally-widget-top-small-banner img#tfrce-logo { float: left; margin: 15px 0 0 15px; width: 122px; height: 68px; }
-#tfrce-rally-widget-top-small-banner div#tfrce-content { width: 550px; margin: 0 auto; }
-#tfrce-rally-widget-top-small-banner p.tfrce-body { font-size: 16px; color: #eee; max-width: 550px; margin: 10px auto; text-align: center; }
-#tfrce-rally-widget-top-small-banner span#tfrce-heading { background: url('images/tfrce-widget-heading.png'); display: block; max-width: 436px; height: 27px; margin: 0 auto; }
-#tfrce-rally-widget-top-small-banner div#tfrce-actions { float: right; margin: 0 67px 0 0; }
-#tfrce-rally-widget-top-small-banner span#tfrce-call-to-action-label { font-size: 12px; color: #ddd; float: left; margin: 18px 0 5px; }
-#tfrce-rally-widget-top-small-banner a#tfrce-call-to-action { display: block; width: 210px; padding: 10px 0; border-radius: 5px; text-align: center; color: #fff; text-decoration: none; float: left; clear: left; margin: 0 0 0 10px; }
+#tfrce-rally-widget-bottom-small-banner { color: #fff; font-family: 'Lucida Grande', 'Arial', sans-serif; position: relative; overflow: hidden; }
+#tfrce-rally-widget-bottom-small-banner img#tfrce-logo { float: left; margin: 9px 0 0 9px; width: 61px; height: 34px; }
+#tfrce-rally-widget-bottom-small-banner div#tfrce-content { width: 420px; float: left;}
+#tfrce-rally-widget-bottom-small-banner p.tfrce-body { font-size: 12px; color: #eee; max-width: 400px; float: left; margin: 10px 0 0 10px;}
+#tfrce-rally-widget-bottom-small-banner span#tfrce-heading { background: url('images/tfrce-widget-heading.png'); display: block; max-width: 436px; height: 27px; margin: 0 auto; }
+#tfrce-rally-widget-bottom-small-banner div#tfrce-actions { float: right; margin: 0 47px 0 0; }
+#tfrce-rally-widget-bottom-small-banner a#tfrce-call-to-action { display: block; width: 200px; padding: 8px 0; border-radius: 5px; text-align: center; color: #fff; text-decoration: none; float: left; clear: left; margin: 7px 0 0; }
 
 @media ( max-width: 1200px ) { 
-    #tfrce-rally-widget-top-small-banner img#tfrce-logo { width: 91px; height: 51px; margin: 25px 0 0 15px; }
-    #tfrce-rally-widget-top-small-banner div#tfrce-content { margin: 0 35% 0 15%; }
-    #tfrce-rally-widget-top-small-banner p.tfrce-body { font-size: 14px; }
-    #tfrce-rally-widget-top-small-banner span#tfrce-heading { width: 287px; height: 18px; background-size: 287px 18px; }
-    #tfrce-rally-widget-top-small-banner a#tfrce-call-to-action { width: 180px; }
+    #tfrce-rally-widget-bottom-small-banner img#tfrce-logo { width: 91px; height: 51px; margin: 25px 0 0 15px; }
+    #tfrce-rally-widget-bottom-small-banner div#tfrce-content { margin: 0 35% 0 15%; }
+    #tfrce-rally-widget-bottom-small-banner p.tfrce-body { font-size: 14px; }
+    #tfrce-rally-widget-bottom-small-banner span#tfrce-heading { width: 287px; height: 18px; background-size: 287px 18px; }
+    #tfrce-rally-widget-bottom-small-banner a#tfrce-call-to-action { width: 180px; }
 }
 
 @media ( max-width: 1000px ) {
-    #tfrce-rally-widget-top-small-banner img#tfrce-logo { width: 80px; height: 44px; margin: 30px 0 0 15px; }
-    #tfrce-rally-widget-top-small-banner div#tfrce-content { margin: 0 40% 0 10%; }
-    #tfrce-rally-widget-top-small-banner p.tfrce-body { font-size: 13px; max-width: 500px; }
-    #tfrce-rally-widget-top-small-banner span#tfrce-heading { width: 287px; height: 18px; background-size: 287px 18px; }
-    #tfrce-rally-widget-top-small-banner div#tfrce-actions { margin: 0 40px 0 0; }
-    #tfrce-rally-widget-top-small-banner span#tfrce-call-to-action-label { font-size: 11px; }
-    #tfrce-rally-widget-top-small-banner a#tfrce-call-to-action { width: 160px; }
+    #tfrce-rally-widget-bottom-small-banner img#tfrce-logo { width: 80px; height: 44px; margin: 30px 0 0 15px; }
+    #tfrce-rally-widget-bottom-small-banner div#tfrce-content { margin: 0 40% 0 10%; }
+    #tfrce-rally-widget-bottom-small-banner p.tfrce-body { font-size: 13px; max-width: 500px; }
+    #tfrce-rally-widget-bottom-small-banner span#tfrce-heading { width: 287px; height: 18px; background-size: 287px 18px; }
+    #tfrce-rally-widget-bottom-small-banner div#tfrce-actions { margin: 0 40px 0 0; }
+    #tfrce-rally-widget-bottom-small-banner span#tfrce-call-to-action-label { font-size: 11px; }
+    #tfrce-rally-widget-bottom-small-banner a#tfrce-call-to-action { width: 160px; }
 }
 
 @media ( max-width: 900px ) {
-    #tfrce-rally-widget-top-small-banner img#tfrce-logo { width: 80px; height: 44px; }
-    #tfrce-rally-widget-top-small-banner div#tfrce-content { margin: 0 45% 0 5%; }
-    #tfrce-rally-widget-top-small-banner p.tfrce-body { font-size: 12px; max-width: 400px; }
-    #tfrce-rally-widget-top-small-banner span#tfrce-heading { width: 218px; height: 14px; background-size: 218px 14px; }
-    #tfrce-rally-widget-top-small-banner div#tfrce-actions { margin: 0 35px 0 0; }
-    #tfrce-rally-widget-top-small-banner span#tfrce-call-to-action-label { font-size: 10px; }
-    #tfrce-rally-widget-top-small-banner a#tfrce-call-to-action { width: 160px; }
+    #tfrce-rally-widget-bottom-small-banner img#tfrce-logo { width: 80px; height: 44px; }
+    #tfrce-rally-widget-bottom-small-banner div#tfrce-content { margin: 0 45% 0 5%; }
+    #tfrce-rally-widget-bottom-small-banner p.tfrce-body { font-size: 12px; max-width: 400px; }
+    #tfrce-rally-widget-bottom-small-banner span#tfrce-heading { width: 218px; height: 14px; background-size: 218px 14px; }
+    #tfrce-rally-widget-bottom-small-banner div#tfrce-actions { margin: 0 35px 0 0; }
+    #tfrce-rally-widget-bottom-small-banner span#tfrce-call-to-action-label { font-size: 10px; }
+    #tfrce-rally-widget-bottom-small-banner a#tfrce-call-to-action { width: 160px; }
 }
 
 /* Common Styles */
