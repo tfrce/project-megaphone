@@ -145,7 +145,7 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
         document.body.appendChild(campaign_container);
         var iframe = document.createElement('iframe');
         iframe.style.cssText = style.iframe;
-        iframe.src = '../stopwatchingus/' + active_campaign.config.show_style;
+        iframe.src = '../stopwatchingus/' + active_campaign.config.show_style + '.html';
         iframe_container.appendChild(iframe);
         var closeButton = document.createElement('button');
         closeButton.style.cssText = style.closeButton;
@@ -173,12 +173,8 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
 
         checks.nearDC(function (res) {
           if(res.withinHundredKilometers || active_campaign.config.disableGeo) {
-
-          } else {
-            alert('You are not actually in range but this is beta so Im showing you dialog anyway');
+            active_campaign.show();
           }
-          // All checks passed, show campaign
-          active_campaign.show();
         })
 
       }
