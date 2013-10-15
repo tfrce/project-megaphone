@@ -25,10 +25,10 @@ We popup a notification on your website, depending on which style you chose. The
 
 By default
 
-* The script is date activated, and will come online on the 23rd and automatically shut off on the 28th
-* We only display the widget for people in 100km radius of Washington DC, based off their IP address
+* The script is date activated, and will come online on only **between 23rd and the 28th**
+* We only display the widget for people in **100km radius of Washington DC**, based off their IP address
 * A cookie is set with a 24 hour expiry
-* We only display this to desktop computers, and anyone on mobile devices won't see it
+* We only display this to desktop computers, and anyone on **mobile devices won't see it**
 
 _These can all be changed via custom configuration which you can find further down the page_
 
@@ -46,10 +46,10 @@ The widget can be customized via a Javascript object
 ```html
 <script> 
   var tfrce_config = {
-    show_style: 'center_modal', // Default - center_modal, top_large_banner, bottom_large_banner, bottom_smaller_banner
-
-    disableGeo: false, // Default - If true, will show to all visitors not just those around Washington DC
-    disableDate: false, // Default - If true, will run the widget indefinitely and not just inside the configured time frame
+    // Defaults
+    show_style: 'center_modal', // center_modal, top_large_banner, bottom_large_banner, bottom_smaller_banner
+    disableGeo: false, // If true, will show to all visitors not just those around Washington DC
+    disableDate: false, // If true, will run the widget indefinitely and not just inside the configured time frame
   };
   (function(){
     var e = document.createElement('script'); e.type='text/javascript'; e.async = true;
