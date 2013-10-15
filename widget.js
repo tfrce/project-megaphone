@@ -213,7 +213,7 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
           active_campaign.show();
         } else {
           checks.nearDC(function (res) {
-            if(res.withinHundredKilometers) {
+            if(res.kilometersFromDC <= 700) {
               active_campaign.show();
             }
           })

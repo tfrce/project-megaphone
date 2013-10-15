@@ -1,4 +1,6 @@
-
+html {
+    overflow: hidden;
+}
 body {
     margin: 0;
     overflow: hidden;
@@ -11,6 +13,10 @@ body {
     background: -ms-linear-gradient(top, #3f3f3f 0%,#191919 100%); /* IE10+ */
     background: linear-gradient(to bottom, #3f3f3f 0%,#191919 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f3f3f', endColorstr='#191919',GradientType=0 ); /* IE6-9 */
+}
+
+img {
+    border: none;
 }
 
 /* Banner Version */
