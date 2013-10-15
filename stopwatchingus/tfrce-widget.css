@@ -83,12 +83,12 @@ body {
 /* Modal: Widget Version Three */
 #tfrce-rally-widget-center-modal { color: #fff; font-family: 'Lucida Grande', 'Arial', sans-serif; position: relative; overflow: hidden; }
 #tfrce-rally-widget-center-modal img#tfrce-logo { margin: 30px auto 15px; width: 122px; height: 68px; display: block; }
-#tfrce-rally-widget-center-modal div#tfrce-content { width: 436px; margin: 20px auto; }
+#tfrce-rally-widget-center-modal div#tfrce-content { width: 436px; margin: 25px auto 20px auto}
 #tfrce-rally-widget-center-modal p.tfrce-body { font-size: 17px; color: #eee; max-width: 436px; margin: 10px auto; text-align: center; }
-#tfrce-rally-widget-center-modal span#tfrce-heading { background: url('images/tfrce-widget-heading.png'); display: block; max-width: 436px; height: 27px; margin: 20px auto 0 auto; }
+#tfrce-rally-widget-center-modal span#tfrce-heading { background: url('images/tfrce-widget-heading.png'); display: block; max-width: 436px; height: 27px; margin: 25px auto 0 auto; }
 #tfrce-rally-widget-center-modal div#tfrce-actions {}
 #tfrce-rally-widget-center-modal span#tfrce-call-to-action-label { font-size: 12px; color: #ddd; text-align: center; display: block; }
-#tfrce-rally-widget-center-modal a#tfrce-call-to-action { display: block; width: 250px; padding: 10px 0; border-radius: 5px; text-align: center; color: #fff; text-decoration: none; margin: 0 auto 5px; }
+#tfrce-rally-widget-center-modal a#tfrce-call-to-action { display: block; width: 250px; padding: 13px 0; border-radius: 5px; text-align: center; color: #fff; text-decoration: none; margin: 22px auto 5px; }
 
 /* Widget Version Four */
 #tfrce-rally-widget-bottom-small-banner { color: #fff; font-family: 'Lucida Grande', 'Arial', sans-serif; position: relative; overflow: hidden; }
