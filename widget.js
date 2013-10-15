@@ -220,12 +220,16 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
           return false;
         }
 
-        checks.nearDC(function (res) {
-          if(res.withinHundredKilometers || active_campaign.config.disableGeo) {
-            active_campaign.show();
-          }
-        })
-
+        // Check if they are near Washington?
+        if(active_campaign.config.disableGeo) {
+          active_campaign.show();
+        } else {
+          checks.nearDC(function (res) {
+            if(res.withinHundredKilometers) {
+              active_campaign.show();
+            }
+          })
+        }
       }
     }
   }
