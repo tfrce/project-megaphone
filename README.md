@@ -10,7 +10,7 @@ We are still testing over the next 24 hours. Please help us test if you wish, bu
 
 Saturday October 26th is the 12th anniversary of the PATRIOT Act. 
 
-On that day, the EFF, ACLU, Demand Progress, Free Press and dozens of other public advocacy groups are planning a rally to protest mass surveilance in Washington, DC as members of the StopWatching.us coalition.
+To mark the law's anniversary, the EFF, ACLU, Demand Progress, Free Press and dozens of other public advocacy groups in the StopWatching.us coalition are planning a rally to protest mass surveilance in Washington, DC.
 
 We've spent countless hours organizing buses to transport people from nearby cities, assembled a great lineup of speakers, and filed the relevant permits.
 
