@@ -1,8 +1,14 @@
-# Rally Against Mass Surveillance
+We are still testing over the next 24 hours. Please help us test if you wish, but please don't share this link.
+
+# Multiplex: Help Rally Against Surveillance
+
+> ".. empires and nation-states weren’t organs of global human perception. They had their many eyes, certainly, but they didn’t constitute a single multiplex eye for the entire human species."
+> 
+> William Gibson
 
 Saturday October 26th is the 12th anniversary of the PATRIOT Act. 
 
-On that day, the EFF, ACLU, Demand Progress, Free Press and dozens of other public advocacy groups are planning a rally to protest mass surveilance in Washington, DC as members of the StopWatching.us coalition.
+To mark the law's anniversary, the EFF, ACLU, Demand Progress, Free Press and dozens of other public advocacy groups in the StopWatching.us coalition are planning [a rally to protest mass surveilance](https://rally.stopwatching.us) in Washington, DC.
 
 We've spent countless hours organizing buses to transport people from nearby cities, assembled a great lineup of speakers, and filed the relevant permits.
 
@@ -34,7 +40,7 @@ We popup a notification on your website, depending on which style you chose. The
 By default
 
 * The script is date activated, and will come online on the 23rd and automatically shut off on the 28th
-* We only display the widget for people in 100km radius of Washington DC, based off their IP address
+* We only display the widget for people in 700km radius of Washington DC, based off their IP address
 * A cookie is set with a 24 hour expiry
 * We only display this to desktop computers, and anyone on mobile devices won't see it
 
@@ -42,10 +48,9 @@ _These can all be changed via custom configuration which you can find further do
 
 ## Examples
 
-* [Top Large Banner](http://tfrce.github.io/widget/example/top_large_banner_example.html)
-* [Top Small Banner](http://tfrce.github.io/widget/example/bottom_small_banner_example.html)
-* [Bottom Large Banner](http://tfrce.github.io/widget/example/bottom_large_banner_example.html)
-* [Center Modal](http://tfrce.github.io/widget/example/center_modal_example.html)
+* [Banner](http://tfrce.github.io/widget/example/banner.html)
+* [Modal](http://tfrce.github.io/widget/example/modal.html)
+* [Strip](http://tfrce.github.io/widget/example/strip.html)
 
 ## Configuration
 
