@@ -103,7 +103,7 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
 
   var campaign = {
     stopwatchingus: {
-      cookieName: 'stopwatchingus_hasseen5',
+      cookieName: 'stopwatchingus_hasseen6',
       startDate: new Date(2011, 10, 30, 0),
       endDate: new Date(2014, 10, 30, 0),
       hide: function (el, callback) {
@@ -188,6 +188,9 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
 
 
       },
+      navigate: function () {
+        window.open('https://rally.stopwatching.us','_blank');
+      },
       init: function (config) {
         active_campaign.config = config;
         // Check cookie for this campaign
@@ -220,6 +223,7 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
   if(typeof campaign[widget_config.campaign] !== 'undefined') {
     active_campaign = campaign[widget_config.campaign];
     active_campaign.init(widget_config);
+    window.tfrce_config.active_campaign = active_campaign;
   } else {
     return false;
   }
