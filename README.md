@@ -30,7 +30,7 @@ We popup a notification on your website, depending on which style you chose. The
 ## Examples
 
 * [Top Large Banner](http://tfrce.github.io/widget/example/top_large_banner_example.html)
-* [Top Small Banner](http://tfrce.github.io/widget/example/top_small_banner_example.html)
+* [Top Small Banner](http://tfrce.github.io/widget/example/bottom_small_banner_example.html)
 * [Bottom Large Banner](http://tfrce.github.io/widget/example/bottom_large_banner_example.html)
 * [Center Modal](http://tfrce.github.io/widget/example/center_modal_example.html)
 
@@ -43,7 +43,7 @@ The widget can be customized via a Javascript object
 ```html
 <script> 
   var tfrce_config = {
-    show_style: 'center_modal', // Default - center_modal, top_large_banner, bottom_large_banner, top_smaller_banner
+    show_style: 'center_modal', // Default - center_modal, top_large_banner, bottom_large_banner, bottom_smaller_banner
 
     disableGeo: false, // Default - If true, will show to all visitors not just those around Washington DC
     disableDate: false, // Default - If true, will run the widget indefinitely and not just inside the configured time frame
