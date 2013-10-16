@@ -16,6 +16,12 @@ We've spent countless hours organizing buses to transport people from nearby cit
 
 Government surveillance is a grave challenge to privacy of the Internet, and threatens our ability to communicate and conduct transactions privately online. If you own a website, you can be part of this effort. Together we can turn the tide against surveillance.
 
+## Examples
+
+* [Banner](http://tfrce.github.io/widget/example/banner.html)
+* [Modal](http://tfrce.github.io/widget/example/modal.html)
+* [Strip](http://tfrce.github.io/widget/example/strip.html)
+
 
 ## Getting started
 
@@ -24,13 +30,15 @@ Just copy and paste the code below into your website.
 _Place it before `</body>`, the script is optimized to not affect the performance of your website_
 
 ```html
+<!--[if gte IE 8]>
 <script> 
   (function(){
     var e = document.createElement('script'); e.type='text/javascript'; e.async = true;
-    e.src = document.location.protocol + '//cdnjs.cloudflare.com/ajax/libs/tfrce-widget/1/widget.min.js';
+    e.src = document.location.protocol + '//widget.taskforce.is/widget/widget.min.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s);
   })();
 </script>
+-->
 ```
 
 ## What does the script do?
@@ -41,16 +49,10 @@ By default
 
 * The script is date activated, and will come online on the 23rd and automatically shut off on the 28th
 * We only display the widget for people in 700km radius of Washington DC, based off their IP address
-* A cookie is set with a 24 hour expiry
+* A cookie is set with a 48 hour expiry
 * We only display this to desktop computers, and anyone on mobile devices won't see it
 
 _These can all be changed via custom configuration which you can find further down the page_
-
-## Examples
-
-* [Banner](http://tfrce.github.io/widget/example/banner.html)
-* [Modal](http://tfrce.github.io/widget/example/modal.html)
-* [Strip](http://tfrce.github.io/widget/example/strip.html)
 
 ## Configuration
 
@@ -59,10 +61,11 @@ The widget can be customized via a Javascript object
 ```html
 <script> 
   var tfrce_config = {
-    show_style: 'center_modal', // Default - center_modal, top_large_banner, bottom_large_banner, bottom_smaller_banner
+    show_style: 'banner', // Other styles are banner,modal,strip and dev
 
-    disableGeo: false, // Default - If true, will show to all visitors not just those around Washington DC
-    disableDate: false, // Default - If true, will run the widget indefinitely and not just inside the configured time frame
+    disableGeo: false, // If true, will show to all visitors not just those around Washington DC
+    disableDate: false, // If true, will run the widget indefinitely and not just inside the configured time frame
+    cookieTimeout: 86400 // Currently set to two days
   };
   (function(){
     var e = document.createElement('script'); e.type='text/javascript'; e.async = true;
