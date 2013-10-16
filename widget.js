@@ -112,19 +112,19 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
       },
       styles: {
         default: {
-          campaign_container: 'position:fixed;width:100%;bottom:0;z-index:100000; padding: 0 20px;-webkit-box-sizing: border-box; -moz-box-sizing: border-box;',
+          campaign_container: 'position:fixed;width:100%;bottom:0;left:0;z-index:100000; padding: 0 20px;-webkit-box-sizing: border-box; -moz-box-sizing: border-box;',
           iframe_container: 'position: relative; height: 100px; max-width:1201px; margin: 0px auto 8px auto; background: #444;border-radius: 10px;',
           iframe: 'width: 100%;height: 100%;border: 0;margin:0;padding:0;border-radius: 10px;',
           closeButton: 'border: 0;height: 28px;width: 28px;cursor: pointer;position: absolute;top:33px;right:20px;background: url("' + ASSET_URL +'images/close-button.png");'
         },
         dev: {
-          campaign_container: 'position:fixed;width:100%;bottom:0;z-index:100000; padding: 0 20px;-webkit-box-sizing: border-box; -moz-box-sizing: border-box;',
+          campaign_container: 'position:fixed;width:100%;bottom:0;left:0;z-index:100000; padding: 0 20px;-webkit-box-sizing: border-box; -moz-box-sizing: border-box;',
           iframe_container: 'position: relative; height: 100px; max-width:1201px; margin: 0px auto 8px auto; background: #444;border-radius: 10px;',
           iframe: 'width: 100%;height: 100%;border: 0;margin:0;padding:0;border-radius: 10px;',
           closeButton: 'border: 0;height: 28px;width: 28px;cursor: pointer;position: absolute;top:33px;right:20px;background: url("' + ASSET_URL +'images/close-button.png");'
         },
         strip: {
-          campaign_container: 'position:fixed;width:100%;bottom:0;opacity:1;z-index:100000;-webkit-box-sizing: border-box; -moz-box-sizing: border-box;',
+          campaign_container: 'position:fixed;width:100%;left:0;bottom:0;opacity:1;z-index:100000;-webkit-box-sizing: border-box; -moz-box-sizing: border-box;',
           iframe_container: 'position:relative;height:50px;margin:0 20px 0px 20px;background:#444;border-radius:10px 10px 0 0;',
           iframe: 'width:100%;height:100%;border:0;margin:0;padding:0;border-radius:10px;',
           closeButton: 'border:0;height:28px;width:28px;cursor:pointer;position:absolute;top:11px;right:10px;background:url("' + ASSET_URL +'images/close-button.png");'
