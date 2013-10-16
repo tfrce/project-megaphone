@@ -26,8 +26,7 @@ img {
 #tfrce-rally-widget-bottom-large-banner p.tfrce-body { font-size: 16px; color: #eee; max-width: 550px; margin: 10px auto; text-align: center; }
 #tfrce-rally-widget-bottom-large-banner span#tfrce-heading { }
 #tfrce-rally-widget-bottom-large-banner div#tfrce-actions { float: right; width:28%; }
-#tfrce-rally-widget-bottom-large-banner a#tfrce-call-to-action-label { font-size: 12px; color: #ddd; float: left; margin: 18px 0 5px 18px; }
-#tfrce-rally-widget-bottom-large-banner span#tfrce-call-to-action-label { font-size: 12px; color: #ddd; float: left; margin: 18px 0 5px; }
+#tfrce-rally-widget-bottom-large-banner #tfrce-call-to-action-label { font-size: 12px; color: #ddd; float: left; margin: 18px 0 5px 0px; display: block; width: 232px; text-align: center;}
 #tfrce-rally-widget-bottom-large-banner a#tfrce-call-to-action { display: block; width: 210px; padding: 10px 0; border-radius: 5px; text-align: center; color: #fff; text-decoration: none; float: left; clear: left; margin: 0 0 0 10px; }
 
 @media ( max-width: 1080px ) {
@@ -37,16 +36,16 @@ img {
 @media ( max-width: 970px ) {
 #tfrce-rally-widget-bottom-large-banner p.tfrce-body { font-size: 13px; }
 #tfrce-rally-widget-bottom-large-banner a#tfrce-call-to-action {  width: 170px; }
-#tfrce-rally-widget-bottom-large-banner span#tfrce-call-to-action-label {font-size:10px;}
+#tfrce-rally-widget-bottom-large-banner #tfrce-call-to-action-label {font-size:10px; width: 191px;}
 }
 
-@media ( max-width: 840px ) {
+@media ( max-width: 880px ) {
 #tfrce-rally-widget-bottom-large-banner p.tfrce-body { font-size: 13px; }
 #tfrce-rally-widget-bottom-large-banner div#tfrce-content { width: 55%; float:left; text-align:center; margin: 0 20px; }
 #tfrce-rally-widget-bottom-large-banner div#tfrce-actions {float:left;} 
 #tfrce-rally-widget-bottom-large-banner img#tfrce-logo { margin: 15px 0; display:none;}
 #tfrce-rally-widget-bottom-large-banner a#tfrce-call-to-action {  width: 90%; margin-top:28px;}
-#tfrce-rally-widget-bottom-large-banner span#tfrce-call-to-action-label { display: none;}
+#tfrce-rally-widget-bottom-large-banner #tfrce-call-to-action-label { display: none;}
 #tfrce-rally-widget-bottom-large-banner span#tfrce-heading img { max-width:90%; }
 }
 
