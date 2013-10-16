@@ -1,38 +1,45 @@
-We are still testing over the next 24 hours. Please help us test if you wish, but please don't share this link.
-
 # Project Megaphone
 
 Saturday October 26th is the 12th anniversary of the PATRIOT Act. 
 
 To mark the law's anniversary, the EFF, ACLU, Demand Progress, Free Press and dozens of other public advocacy groups in the StopWatching.us coalition are planning [a rally to protest mass surveilance](https://rally.stopwatching.us) in Washington, DC. We've spent countless hours organizing buses to transport people from nearby cities, assembled a great lineup of speakers, and filed the relevant permits. 
 
-**If you own a website, no matter how big or small, we need your help to get the word out and make the rally a success**. 
+**If you own a website, no matter how big or small, we need your help.**
 
-Mass surveillance is a grave challenge to privacy on the Internet, and threatens our ability to communicate and conduct transactions privately online.
+Mass surveillance is a grave challenge to privacy on the Internet, and threatens our ability to communicate and conduct transactions privately online. **This is a critical moment:** If we don't convince Congress to make meaningful change now, while Snowden's leaks have the public's attention, we may never have another chance.
 
 ## How Project Megaphone works
 
-The script below checks the IP of each visitor, and if they are within a 700km radius of Washington, D.C., loads one of three versions of a banner advertising the rally.
+Project Megaphone is a simple script that you can add to your site. The script checks the IP of each visitor, and if they are within a 700km radius of Washington, D.C., displays a banner informing the user of the rally.
+
+A few important notes:
 
 * The banners are not displayed on mobile devices.
 * The script automatically stops displaying the banner after 12pm on October 26th.
 * The script and geolocation server have been thoroughly load-tested and can handle millions of hits per day.
 
 
-## Examples
+## Banner styles
 
-These example pages display the banners even if you're not near D.C.:
+The "view example page" links below display the banners even if you're not near D.C.
 
-* [Banner](http://tfrce.github.io/project-megaphone/example/banner.html)
-* [Modal](http://tfrce.github.io/project-megaphone/example/modal.html)
-* [Strip](http://tfrce.github.io/project-megaphone/example/strip.html)
+**Default style** - <a href="http://tfrce.github.io/project-megaphone/example/default.html" target="_blank">view example page</a><br />
+<img src="screenshots/default.png" alt="modal"width="280" />
+
+
+**Modal** - <a href="http://tfrce.github.io/project-megaphone/example/modal.html" target="_blank">view example page</a><br />
+<img src="screenshots/modal.png" alt="modal"width="280" />
+
+
+**Strip** - <a href="http://tfrce.github.io/project-megaphone/example/strip.html" target="_blank">view example page</a><br />
+<img src="screenshots/strip.png" alt="modal"width="280" />
 
 
 ## Getting started
 
 Simply copy and paste the code below into your website.
 
-_Place this before `</body>` tag. The script is optimized to not affect the performance of your website._
+_Place the code below before `</body>` tag. The script loads asynchronously and won't affect page load times._
 
 ```html
 <!--[if gt IE 8]>
@@ -55,15 +62,15 @@ _Place this before `</body>` tag. The script is optimized to not affect the perf
 
 ## Configuration
 
-The widget can be customized via a Javascript object
 
+You can choose a different banner style and customize the preferences using a javascript object:
 ```html
 <script> 
   var tfrce_config = {
-    show_style: 'banner', // The four available styles are 'banner', 'modal', 'strip' and 'dev' (see note below).
+    show_style: 'default', // The four available styles are 'default', 'modal', 'strip' and 'dev' (see note below).
 
     disableGeo: false, // If true, will show to all visitors not just those around Washington DC
-    cookieTimeout: 172800 // Currently set to two days
+    cookieTimeout: 172800 // This is the amount of time before the banner will be shown to a user again. Default value is 172800 (two days)
   };
   (function(){
     var e = document.createElement('script'); e.type='text/javascript'; e.async = true;
@@ -73,8 +80,15 @@ The widget can be customized via a Javascript object
 </script>
 ```
 
-The 'dev' version of the banner is intended for sites with an audience consisting mostly of developers. When selected, it shows the banner version of the site with an additional link to this Github page. (See: [Backbone Tutorials](http://backbonetutorials.com/) and [Cdnjs](http://cdnjs.com)).
+The 'dev' style is intended for sites with an audience consisting mostly of developers. When selected, it shows the default version of the banner but adds a link to this Github page. (See: [Backbone Tutorials](http://backbonetutorials.com/) and [xdnjs](http://cdnjs.com)).
 
-Also feel free to fork and submit pull request for any bugs or quirks you might find. 
+Please feel free to fork and submit pull requests for any bugs or quirks you might find. 
 
 Built by [Taskforce.is](http://taskforce.is) members [Thomas Davis](https://twitter.com/neutralthoughts), [Tyler Morgan](https://twitter.com/digismack), [Beau Gunderson](https://twitter.com/beaugunderson) and [Sina Khanifar](https://twitter.com/sinak).
+
+## List of participating sites:
+
+- [cdnjs](http://cdnjs.com)
+- [Backbone Tutorials](http://backbonetutorials.com/)
+- [sina.is](http://sina.is/)
+- Submit a pull request, <a href="https://twitter.com/home?status=@sinak Please add our XXX to the list of sites participating in Project Megaphone" target="_blank">tweet</a> or <a href="mailto:sina.khanifar@gmail.com" target="_blank">email us</a> to be added here.
