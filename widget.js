@@ -13,9 +13,6 @@
 
   ===============================================================================
 
-  TODO 
-    - Use underscores or camelcase?
-  
 */
 
 // Wrap widget in function to protect scope
@@ -114,12 +111,6 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
         if(callback) { callback(); };
       },
       styles: {
-        modal: {
-          campaign_container: '',
-          iframe_container: '',
-          iframe: '',
-          closeButton: ''
-        },
         banner: {
           campaign_container: 'position:fixed;width:100%;bottom:0;z-index:100; padding: 0 20px;',
           iframe_container: 'position: relative; height: 100px; max-width:1201px; margin: 0px auto 8px auto; background: #444;border-radius: 10px;',
