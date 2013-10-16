@@ -1,6 +1,6 @@
 We are still testing over the next 24 hours. Please help us test if you wish, but please don't share this link.
 
-# Project Megaphone: Rally Against Surveillance
+# Project Megaphone
 
 Saturday October 26th is the 12th anniversary of the PATRIOT Act. 
 
@@ -77,4 +77,4 @@ The 'dev' version of the banner is intended for sites with an audience consistin
 
 Also feel free to fork and submit pull request for any bugs or quirks you might find. 
 
-Built by [RRITF](http://taskforce.is)
+Built by the [RRITF](http://taskforce.is) members [Thomas Davis](https://twitter.com/neutralthoughts), [Tyler Morgan](https://twitter.com/digismack), [Beau Gunderson](https://twitter.com/beaugunderson) and [Sina Khanifar](https://twitter.com/sinak).
