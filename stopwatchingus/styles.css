@@ -18,7 +18,7 @@ img {
     border: none;
 }
 
-a#tfrce-call-to-action-label {color: #ddd;}
+a#tfrce-call-to-action-label {color: #ddd; text-decoration:none;}
 a#tfrce-call-to-action-label:visited {color: #ddd;}
 
 /* Banner Version */
@@ -29,7 +29,7 @@ a#tfrce-call-to-action-label:visited {color: #ddd;}
 #tfrce-rally-widget-bottom-large-banner p.tfrce-body { font-size: 16px; color: #eee; max-width: 550px; margin: 10px auto; text-align: center; }
 #tfrce-rally-widget-bottom-large-banner span#tfrce-heading { }
 #tfrce-rally-widget-bottom-large-banner div#tfrce-actions { float: right; width:28%; }
-#tfrce-rally-widget-bottom-large-banner #tfrce-call-to-action-label { font-size: 12px; color: #ddd; float: left; margin: 18px 0 5px 0px; display: block; width: 232px; text-align: center;}
+#tfrce-rally-widget-bottom-large-banner #tfrce-call-to-action-label { font-size: 11px; float: left; margin: 16px 0 6px 0px; display: block; width: 232px; text-align: center;}
 #tfrce-rally-widget-bottom-large-banner a#tfrce-call-to-action { display: block; width: 210px; padding: 10px 0; border-radius: 5px; text-align: center; color: #fff; text-decoration: none; float: left; clear: left; margin: 0 0 0 10px; }
 
 @media ( max-width: 1080px ) {
@@ -59,7 +59,7 @@ a#tfrce-call-to-action-label:visited {color: #ddd;}
 #tfrce-rally-widget-center-modal p.tfrce-body { font-size: 17px; color: #eee; max-width: 436px; margin: 10px auto; text-align: center; }
 #tfrce-rally-widget-center-modal span#tfrce-heading { background: url('images/tfrce-widget-heading.png'); display: block; max-width: 436px; height: 27px; margin: 25px auto 0 auto; }
 #tfrce-rally-widget-center-modal div#tfrce-actions {}
-#tfrce-rally-widget-center-modal span#tfrce-call-to-action-label { font-size: 12px; color: #ddd; text-align: center; display: block; }
+#tfrce-rally-widget-center-modal span#tfrce-call-to-action-label { font-size: 11px; margin-top: 10px; color: #ddd; text-align: center; display: block; }
 #tfrce-rally-widget-center-modal a#tfrce-call-to-action { display: block; width: 250px; padding: 13px 0; border-radius: 5px; text-align: center; color: #fff; text-decoration: none; margin: 22px auto 5px; }
 
 /* Strip */
@@ -116,3 +116,5 @@ a#tfrce-call-to-action-label:visited {color: #ddd;}
     background: linear-gradient(to bottom, #6de840 0%,#3da327 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6de840', endColorstr='#3da327',GradientType=0 );
 }
+
+a#tfrce-call-to-action-label:hover {color: #fff;}
