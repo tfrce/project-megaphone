@@ -22,7 +22,7 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
 
   // Do configuration
 
-  widget_config.show_style = widget_config.show_style || 'center_modal';
+  widget_config.show_style = widget_config.show_style || 'default';
   widget_config.disableGeo = widget_config.disableGeo || false;
   widget_config.debug = widget_config.debug || false;
   widget_config.disableDate = widget_config.disableDate || false;
@@ -111,7 +111,7 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
         if(callback) { callback(); };
       },
       styles: {
-        banner: {
+        default: {
           campaign_container: 'position:fixed;width:100%;bottom:0;z-index:100000; padding: 0 20px;-webkit-box-sizing: border-box; -moz-box-sizing: border-box;',
           iframe_container: 'position: relative; height: 100px; max-width:1201px; margin: 0px auto 8px auto; background: #444;border-radius: 10px;',
           iframe: 'width: 100%;height: 100%;border: 0;margin:0;padding:0;border-radius: 10px;',
