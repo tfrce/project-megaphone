@@ -4,25 +4,24 @@ We are still testing over the next 24 hours. Please help us test if you wish, bu
 
 Saturday October 26th is the 12th anniversary of the PATRIOT Act. 
 
-To mark the law's anniversary, the EFF, ACLU, Demand Progress, Free Press and dozens of other public advocacy groups in the StopWatching.us coalition are planning [a rally to protest mass surveilance](https://rally.stopwatching.us) in Washington, DC.
-
-We've spent countless hours organizing buses to transport people from nearby cities, assembled a great lineup of speakers, and filed the relevant permits. 
+To mark the law's anniversary, the EFF, ACLU, Demand Progress, Free Press and dozens of other public advocacy groups in the StopWatching.us coalition are planning [a rally to protest mass surveilance](https://rally.stopwatching.us) in Washington, DC. We've spent countless hours organizing buses to transport people from nearby cities, assembled a great lineup of speakers, and filed the relevant permits. 
 
 **If you own a website, no matter how big or small, we need your help to get the word out and make the rally a success**. 
 
-Government surveillance is a grave challenge to privacy of the Internet, and threatens our ability to communicate and conduct transactions privately online.
+Mass surveillance is a grave challenge to privacy on the Internet, and threatens our ability to communicate and conduct transactions privately online.
 
-## How it works
+## How Project Megaphone works
 
-The Project Megaphone script checks the IP of each visitor, and if they are within a 700km radius of Washington, D.C., loads one of three versions of a banner advertising the rally.
+The script below checks the IP of each visitor, and if they are within a 700km radius of Washington, D.C., loads one of three versions of a banner advertising the rally.
 
-Some more notes on its operation:
 * The banners are not displayed on mobile devices.
 * The script automatically stops displaying the banner after 12pm on October 26th.
 * The script and geolocation server have been thoroughly load-tested and can handle millions of hits per day.
 
 
 ## Examples
+
+These example pages display the banners even if you're not near D.C.:
 
 * [Banner](http://tfrce.github.io/widget/example/banner.html)
 * [Modal](http://tfrce.github.io/widget/example/modal.html)
@@ -31,9 +30,9 @@ Some more notes on its operation:
 
 ## Getting started
 
-Just copy and paste the code below into your website.
+Simply copy and paste the code below into your website.
 
-_Place it before `</body>`, the script is optimized to not affect the performance of your website_
+_Place this before `</body>` tag. The script is optimized to not affect the performance of your website._
 
 ```html
 <!--[if gte IE 8]>
@@ -61,7 +60,7 @@ The widget can be customized via a Javascript object
 ```html
 <script> 
   var tfrce_config = {
-    show_style: 'banner', // Other styles are banner,modal,strip and dev
+    show_style: 'banner', // The four available styles are 'banner', 'modal', 'strip' and 'dev' (see note below).
 
     disableGeo: false, // If true, will show to all visitors not just those around Washington DC
     cookieTimeout: 172800 // Currently set to two days
@@ -73,3 +72,5 @@ The widget can be customized via a Javascript object
   })();
 </script>
 ```
+
+The 'dev' version of the modal is intended for sites with an audience consisting mostly of developers. When selected, it shows the banner version of the site with an additional link to this Github page. (See: [Backbone Tutorials](http://backbonetutorials.com/)).
