@@ -43,7 +43,7 @@ _Place this before `</body>` tag. The script is optimized to not affect the perf
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s);
   })();
 </script>
--->
+<![endif]-->
 ```
 
 ## Script defaults
