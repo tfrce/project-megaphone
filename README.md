@@ -21,15 +21,15 @@ The script below checks the IP of each visitor, and if they are within a 700km r
 
 The "view example page" links below display the banners even if you're not near D.C.
 
-**Default style** ([view example page](http://tfrce.github.io/project-megaphone/example/default.html))<br />
+**Default style** <a href="http://tfrce.github.io/project-megaphone/example/default.html" target="_blank">view example page</a><br />
 <img src="screenshots/default.png" alt="modal"width="280" />
 
 
-**Modal** ([view example page](http://tfrce.github.io/project-megaphone/example/modal.html))<br />
+**Modal** <a href="http://tfrce.github.io/project-megaphone/example/modal.html" target="_blank">view example page</a><br />
 <img src="screenshots/modal.png" alt="modal"width="280" />
 
 
-**Strip** ([view example page](http://tfrce.github.io/project-megaphone/example/strip.html))<br />
+**Strip** <a href="http://tfrce.github.io/project-megaphone/example/strip.html" target="_blank">view example page</a><br />
 <img src="screenshots/strip.png" alt="modal"width="280" />
 
 
