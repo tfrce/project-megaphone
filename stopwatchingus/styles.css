@@ -18,6 +18,9 @@ img {
     border: none;
 }
 
+a#tfrce-call-to-action-label {color: #ddd;}
+a#tfrce-call-to-action-label:visited {color: #ddd;}
+
 /* Banner Version */
 #tfrce-rally-widget-bottom-large-banner { color: #fff; font-family: 'Lucida Grande', 'Arial', sans-serif; position: relative; overflow: hidden; }
 #tfrce-rally-widget-bottom-large-banner div#tfrce-eye { float:left; width: 17%; text-align:center;}
