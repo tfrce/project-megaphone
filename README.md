@@ -6,7 +6,9 @@ Saturday October 26th is the 12th anniversary of the PATRIOT Act.
 
 To mark the law's anniversary, the EFF, ACLU, Demand Progress, Free Press and dozens of other public advocacy groups in the StopWatching.us coalition are planning [a rally to protest mass surveilance](https://rally.stopwatching.us) in Washington, DC.
 
-We've spent countless hours organizing buses to transport people from nearby cities, assembled a great lineup of speakers, and filed the relevant permits.**If you own a website, no matter how big or small, we need your help to get the word out**. 
+We've spent countless hours organizing buses to transport people from nearby cities, assembled a great lineup of speakers, and filed the relevant permits. 
+
+**If you own a website, no matter how big or small, we need your help to get the word out**. 
 
 Government surveillance is a grave challenge to privacy of the Internet, and threatens our ability to communicate and conduct transactions privately online. If you want surveillance to stop, join us.
 
