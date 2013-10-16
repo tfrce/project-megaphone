@@ -23,9 +23,9 @@ The script below checks the IP of each visitor, and if they are within a 700km r
 
 These example pages display the banners even if you're not near D.C.:
 
-* [Banner](http://tfrce.github.io/widget/example/banner.html)
-* [Modal](http://tfrce.github.io/widget/example/modal.html)
-* [Strip](http://tfrce.github.io/widget/example/strip.html)
+* [Banner](http://tfrce.github.io/project-megaphone/example/banner.html)
+* [Modal](http://tfrce.github.io/project-megaphone/example/modal.html)
+* [Strip](http://tfrce.github.io/project-megaphone/example/strip.html)
 
 
 ## Getting started
@@ -39,7 +39,7 @@ _Place this before `</body>` tag. The script is optimized to not affect the perf
 <script> 
   (function(){
     var e = document.createElement('script'); e.type='text/javascript'; e.async = true;
-    e.src = document.location.protocol + '//d1ux67szpr7bp0.cloudfront.net/widget/widget.min.js';
+    e.src = document.location.protocol + '//d1ux67szpr7bp0.cloudfront.net/project-megaphone/widget.min.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s);
   })();
 </script>
@@ -67,7 +67,7 @@ The widget can be customized via a Javascript object
   };
   (function(){
     var e = document.createElement('script'); e.type='text/javascript'; e.async = true;
-    e.src = document.location.protocol + '//d1ux67szpr7bp0.cloudfront.net/widget/widget.min.js';
+    e.src = document.location.protocol + '//d1ux67szpr7bp0.cloudfront.net/project-megaphone/widget.min.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s);
   })();
 </script>
@@ -77,4 +77,4 @@ The 'dev' version of the banner is intended for sites with an audience consistin
 
 Also feel free to fork and submit pull request for any bugs or quirks you might find. 
 
-Built by the [RRITF](http://taskforce.is) members [Thomas Davis](https://twitter.com/neutralthoughts), [Tyler Morgan](https://twitter.com/digismack), [Beau Gunderson](https://twitter.com/beaugunderson) and [Sina Khanifar](https://twitter.com/sinak).
+Built by [Taskforce.is](http://taskforce.is) members [Thomas Davis](https://twitter.com/neutralthoughts), [Tyler Morgan](https://twitter.com/digismack), [Beau Gunderson](https://twitter.com/beaugunderson) and [Sina Khanifar](https://twitter.com/sinak).
