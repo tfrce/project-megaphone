@@ -10,7 +10,7 @@ We've spent countless hours organizing buses to transport people from nearby cit
 
 **If you own a website, no matter how big or small, we need your help to get the word out and make the rally a success**. 
 
-Government surveillance is a grave challenge to privacy of the Internet, and threatens our ability to communicate and conduct transactions privately online. If you want surveillance to stop, join us.
+Government surveillance is a grave challenge to privacy of the Internet, and threatens our ability to communicate and conduct transactions privately online.
 
 ## How it works
 
