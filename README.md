@@ -67,7 +67,7 @@ You can choose a different banner style and customize the preferences using a ja
 ```html
 <script> 
   var tfrce_config = {
-    show_style: 'default', // The four available styles are 'default', 'modal', 'strip' and 'dev' (see note below).
+    show_style: 'default', // The three available styles are 'default', 'modal', and 'strip' .
 
     disableGeo: false, // If true, will show to all visitors not just those around Washington DC
     cookieTimeout: 172800 // This is the amount of time before the banner will be shown to a user again. Default value is 172800 (two days)
@@ -79,8 +79,6 @@ You can choose a different banner style and customize the preferences using a ja
   })();
 </script>
 ```
-
-The 'dev' style is intended for sites with an audience consisting mostly of developers. When selected, it shows the default version of the banner but adds a link to this Github page. (See: [Backbone Tutorials](http://backbonetutorials.com/) and [xdnjs](http://cdnjs.com)).
 
 Please feel free to fork and submit pull requests for any bugs or quirks you might find. 
 
