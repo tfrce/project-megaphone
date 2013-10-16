@@ -74,3 +74,7 @@ The widget can be customized via a Javascript object
 ```
 
 The 'dev' version of the modal is intended for sites with an audience consisting mostly of developers. When selected, it shows the banner version of the site with an additional link to this Github page. (See: [Backbone Tutorials](http://backbonetutorials.com/)).
+
+Also feel free to fork and submit pull request for any bugs or quirks you might find. 
+
+Built by [RRITF](http://taskforce.is)
