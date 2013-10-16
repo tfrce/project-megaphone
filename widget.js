@@ -107,7 +107,7 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
 
       // Months start at zero, so October = 9
       startDate: new Date(2013, 9, 15, 0),
-      endDate: new Date(2014, 9, 26, 12),
+      endDate: new Date(2013, 9, 26, 12),
       hide: function (el, callback) {
         document.body.removeChild(el);
         setCookie(active_campaign.cookieName, 'true', COOKIE_TIMEOUT);
