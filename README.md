@@ -1,10 +1,6 @@
 We are still testing over the next 24 hours. Please help us test if you wish, but please don't share this link.
 
-# Multiplex: Help Rally Against Surveillance
-
-> ".. empires and nation-states weren’t organs of global human perception. They had their many eyes, certainly, but they didn’t constitute a single multiplex eye for the entire human species."
-> 
-> William Gibson
+# Project Megaphone: Rally Against Surveillance
 
 Saturday October 26th is the 12th anniversary of the PATRIOT Act. 
 
@@ -12,9 +8,9 @@ To mark the law's anniversary, the EFF, ACLU, Demand Progress, Free Press and do
 
 We've spent countless hours organizing buses to transport people from nearby cities, assembled a great lineup of speakers, and filed the relevant permits.
 
-**But we need your help to get the word out**. 
+**But if you own a website, no matter how big or small, need your help to get the word out**. 
 
-Government surveillance is a grave challenge to privacy of the Internet, and threatens our ability to communicate and conduct transactions privately online. If you own a website, you can be part of this effort. Together we can turn the tide against surveillance.
+Government surveillance is a grave challenge to privacy of the Internet, and threatens our ability to communicate and conduct transactions privately online. If you want surveillance to stop, join us.
 
 ## Examples
 
