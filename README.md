@@ -24,13 +24,15 @@ Just copy and paste the code below into your website.
 _Place it before `</body>`, the script is optimized to not affect the performance of your website_
 
 ```html
+<!--[if gte IE 8]>
 <script> 
   (function(){
     var e = document.createElement('script'); e.type='text/javascript'; e.async = true;
-    e.src = document.location.protocol + '//cdnjs.cloudflare.com/ajax/libs/tfrce-widget/1/widget.min.js';
+    e.src = document.location.protocol + '//widget.taskforce.is/widget/widget.min.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s);
   })();
 </script>
+-->
 ```
 
 ## What does the script do?
@@ -57,6 +59,7 @@ _These can all be changed via custom configuration which you can find further do
 The widget can be customized via a Javascript object
 
 ```html
+<!--[if gte IE 8]>
 <script> 
   var tfrce_config = {
     show_style: 'center_modal', // Default - center_modal, top_large_banner, bottom_large_banner, bottom_smaller_banner
@@ -70,4 +73,5 @@ The widget can be customized via a Javascript object
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s);
   })();
 </script>
+-->
 ```
