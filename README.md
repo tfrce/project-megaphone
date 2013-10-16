@@ -1,5 +1,3 @@
-We are still testing over the next 24 hours. Please help us test if you wish, but please don't share this link.
-
 # Project Megaphone
 
 Saturday October 26th is the 12th anniversary of the PATRIOT Act. 
@@ -19,13 +17,20 @@ The script below checks the IP of each visitor, and if they are within a 700km r
 * The script and geolocation server have been thoroughly load-tested and can handle millions of hits per day.
 
 
-## Examples
+## Banner styles
 
-These example pages display the banners even if you're not near D.C.:
+The "view example page" links below display the banners even if you're not near D.C.
 
-* [Banner](http://tfrce.github.io/project-megaphone/example/banner.html)
-* [Modal](http://tfrce.github.io/project-megaphone/example/modal.html)
-* [Strip](http://tfrce.github.io/project-megaphone/example/strip.html)
+**Default style** ([view example page](http://tfrce.github.io/project-megaphone/example/default.html))<br />
+<img src="screenshots/default.png" alt="modal"width="280" />
+
+
+**Modal** ([view example page](http://tfrce.github.io/project-megaphone/example/modal.html))<br />
+<img src="screenshots/modal.png" alt="modal"width="280" />
+
+
+**Strip** ([view example page](http://tfrce.github.io/project-megaphone/example/strip.html))<br />
+<img src="screenshots/strip.png" alt="modal"width="280" />
 
 
 ## Getting started
@@ -60,7 +65,7 @@ The widget can be customized via a Javascript object
 ```html
 <script> 
   var tfrce_config = {
-    show_style: 'banner', // The four available styles are 'banner', 'modal', 'strip' and 'dev' (see note below).
+    show_style: 'default', // The four available styles are 'default', 'modal', 'strip' and 'dev' (see note below).
 
     disableGeo: false, // If true, will show to all visitors not just those around Washington DC
     cookieTimeout: 172800 // Currently set to two days
@@ -73,8 +78,8 @@ The widget can be customized via a Javascript object
 </script>
 ```
 
-The 'dev' version of the banner is intended for sites with an audience consisting mostly of developers. When selected, it shows the banner version of the site with an additional link to this Github page. (See: [Backbone Tutorials](http://backbonetutorials.com/) and [Cdnjs](http://cdnjs.com)).
+The 'dev' style is intended for sites with an audience consisting mostly of developers. When selected, it shows the default version of the banner but adds a link to this Github page. (See: [Backbone Tutorials](http://backbonetutorials.com/) and [Cdnjs](http://cdnjs.com)).
 
-Also feel free to fork and submit pull request for any bugs or quirks you might find. 
+Please feel free to fork and submit pull requests for any bugs or quirks you might find. 
 
 Built by [Taskforce.is](http://taskforce.is) members [Thomas Davis](https://twitter.com/neutralthoughts), [Tyler Morgan](https://twitter.com/digismack), [Beau Gunderson](https://twitter.com/beaugunderson) and [Sina Khanifar](https://twitter.com/sinak).
