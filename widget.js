@@ -104,8 +104,10 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
   var campaign = {
     stopwatchingus: {
       cookieName: 'stopwatchingus_hasseen6',
-      startDate: new Date(2013, 10, 14, 0),
-      endDate: new Date(2013, 10, 26, 12),
+
+      // Months start at zero, so October = 9
+      startDate: new Date(2013, 9, 15, 0),
+      endDate: new Date(2014, 9, 26, 12),
       hide: function (el, callback) {
         document.body.removeChild(el);
         setCookie(active_campaign.cookieName, 'true', COOKIE_TIMEOUT);
