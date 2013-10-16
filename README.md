@@ -35,7 +35,7 @@ Simply copy and paste the code below into your website.
 _Place this before `</body>` tag. The script is optimized to not affect the performance of your website._
 
 ```html
-<!--[if gte IE 8]>
+<!--[if gt IE 8]>
 <script> 
   (function(){
     var e = document.createElement('script'); e.type='text/javascript'; e.async = true;
