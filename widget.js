@@ -104,7 +104,7 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
   var campaign = {
     stopwatchingus: {
       cookieName: 'stopwatchingus_hasseen6',
-      startDate: new Date(2013, 10, 15, 0),
+      startDate: new Date(2013, 10, 14, 0),
       endDate: new Date(2013, 10, 26, 12),
       hide: function (el, callback) {
         document.body.removeChild(el);
