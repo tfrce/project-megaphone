@@ -37,7 +37,7 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
     ASSET_URL = '../stopwatchingus/';
     COOKIE_TIMEOUT = 20;
   } else {
-    ASSET_URL = '//widget.taskforce.is/widget/stopwatchingus/';
+    ASSET_URL = '//d1ux67szpr7bp0.cloudfront.net/project-megaphone/stopwatchingus/';
     COOKIE_TIMEOUT = widget_config.cookieTimeout;
   }
 
