@@ -16,6 +16,12 @@ We've spent countless hours organizing buses to transport people from nearby cit
 
 Government surveillance is a grave challenge to privacy of the Internet, and threatens our ability to communicate and conduct transactions privately online. If you own a website, you can be part of this effort. Together we can turn the tide against surveillance.
 
+## Examples
+
+* [Banner](http://tfrce.github.io/widget/example/banner.html)
+* [Modal](http://tfrce.github.io/widget/example/modal.html)
+* [Strip](http://tfrce.github.io/widget/example/strip.html)
+
 
 ## Getting started
 
@@ -47,12 +53,6 @@ By default
 * We only display this to desktop computers, and anyone on mobile devices won't see it
 
 _These can all be changed via custom configuration which you can find further down the page_
-
-## Examples
-
-* [Banner](http://tfrce.github.io/widget/example/banner.html)
-* [Modal](http://tfrce.github.io/widget/example/modal.html)
-* [Strip](http://tfrce.github.io/widget/example/strip.html)
 
 ## Configuration
 
