@@ -47,7 +47,6 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
   // Cookie helpers, taken from w3schools
   function setCookie(c_name,value,seconds) {
     var exdate = new Date(new Date().getTime() + seconds*1000);
-    console.log(new Date(), exdate);
     var c_value=escape(value) + ((seconds==null) ? "" : "; expires="+exdate.toUTCString());
     document.cookie=c_name + "=" + c_value;
   }
