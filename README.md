@@ -12,6 +12,16 @@ We've spent countless hours organizing buses to transport people from nearby cit
 
 Government surveillance is a grave challenge to privacy of the Internet, and threatens our ability to communicate and conduct transactions privately online. If you want surveillance to stop, join us.
 
+## How it works
+
+The Project Megaphone script checks the IP of each visitor, and if they are within a 700km radius of Washington, D.C., loads one of three versions of a banner advertising the rally.
+
+Some more notes on its operation:
+* The banners are not displayed on mobile devices.
+* The script automatically stops displaying the banner after 12pm on October 26th.
+* The script and geolocation server have been thoroughly load-tested and can handle millions of hits per day.
+
+
 ## Examples
 
 * [Banner](http://tfrce.github.io/widget/example/banner.html)
@@ -37,18 +47,12 @@ _Place it before `</body>`, the script is optimized to not affect the performanc
 -->
 ```
 
-## What does the script do?
+## Script defaults
 
-We popup a notification on your website, depending on which style you chose. The script is only 1kb and served off the cdnjs.com network.
-
-By default
-
-* The script is date activated, and will come online on the 23rd and automatically shut off on the 28th
-* We only display the widget for people in 700km radius of Washington DC, based off their IP address
-* A cookie is set with a 48 hour expiry
-* We only display this to desktop computers, and anyone on mobile devices won't see it
-
-_These can all be changed via custom configuration which you can find further down the page_
+* The script will run between the date that you add it to your site and 12pm on October 26th.
+* We only display the widget for people in 700km radius of Washington DC, based off their IP address.
+* If a user clicks to close the banner, the banner will not be shown to them for another 48 hours.
+* We only display banners to desktop computers; mobile devices won't see it.
 
 ## Configuration
 
@@ -60,8 +64,7 @@ The widget can be customized via a Javascript object
     show_style: 'banner', // Other styles are banner,modal,strip and dev
 
     disableGeo: false, // If true, will show to all visitors not just those around Washington DC
-    disableDate: false, // If true, will run the widget indefinitely and not just inside the configured time frame
-    cookieTimeout: 86400 // Currently set to two days
+    cookieTimeout: 172800 // Currently set to two days
   };
   (function(){
     var e = document.createElement('script'); e.type='text/javascript'; e.async = true;
