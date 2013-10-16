@@ -191,7 +191,7 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
         }
 
         // Check between date
-        if(!checks.betweenDate(active_campaign.startDate, active_campaign.endDate) || active_campaign.config.disableDate) {
+        if(!checks.betweenDate(active_campaign.startDate, active_campaign.endDate) && !active_campaign.config.disableDate) {
           return false;
         }
 
