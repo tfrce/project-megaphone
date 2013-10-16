@@ -43,7 +43,7 @@ By default
 
 * The script is date activated, and will come online on the 23rd and automatically shut off on the 28th
 * We only display the widget for people in 700km radius of Washington DC, based off their IP address
-* A cookie is set with a 24 hour expiry
+* A cookie is set with a 48 hour expiry
 * We only display this to desktop computers, and anyone on mobile devices won't see it
 
 _These can all be changed via custom configuration which you can find further down the page_
@@ -59,13 +59,13 @@ _These can all be changed via custom configuration which you can find further do
 The widget can be customized via a Javascript object
 
 ```html
-<!--[if gte IE 8]>
 <script> 
   var tfrce_config = {
-    show_style: 'center_modal', // Default - center_modal, top_large_banner, bottom_large_banner, bottom_smaller_banner
+    show_style: 'banner', // Other styles are banner,modal,strip and dev
 
-    disableGeo: false, // Default - If true, will show to all visitors not just those around Washington DC
-    disableDate: false, // Default - If true, will run the widget indefinitely and not just inside the configured time frame
+    disableGeo: false, // If true, will show to all visitors not just those around Washington DC
+    disableDate: false, // If true, will run the widget indefinitely and not just inside the configured time frame
+    cookieTimeout: 86400 // Currently set to two days
   };
   (function(){
     var e = document.createElement('script'); e.type='text/javascript'; e.async = true;
@@ -73,5 +73,4 @@ The widget can be customized via a Javascript object
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s);
   })();
 </script>
--->
 ```
