@@ -8,7 +8,7 @@ To mark the law's anniversary, the EFF, ACLU, Demand Progress, Free Press and do
 
 We've spent countless hours organizing buses to transport people from nearby cities, assembled a great lineup of speakers, and filed the relevant permits. 
 
-**If you own a website, no matter how big or small, we need your help to get the word out**. 
+**If you own a website, no matter how big or small, we need your help to get the word out and make the rally a success**. 
 
 Government surveillance is a grave challenge to privacy of the Internet, and threatens our ability to communicate and conduct transactions privately online. If you want surveillance to stop, join us.
 
