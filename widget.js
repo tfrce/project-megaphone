@@ -30,7 +30,7 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
   widget_config.debug = widget_config.debug || false;
   widget_config.disableDate = widget_config.disableDate || false;
   widget_config.campaign = widget_config.campaign || 'stopwatchingus';
-  widget_config.cookieTimeout = widget_config.cookieTimeout || 86400;
+  widget_config.cookieTimeout = widget_config.cookieTimeout || 172800;
 
   // Setup
   var active_campaign;
@@ -104,8 +104,8 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
   var campaign = {
     stopwatchingus: {
       cookieName: 'stopwatchingus_hasseen6',
-      startDate: new Date(2011, 10, 30, 0),
-      endDate: new Date(2014, 10, 30, 0),
+      startDate: new Date(2013, 10, 15, 0),
+      endDate: new Date(2013, 10, 26, 12),
       hide: function (el, callback) {
         document.body.removeChild(el);
         setCookie(active_campaign.cookieName, 'true', COOKIE_TIMEOUT);
