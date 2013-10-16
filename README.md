@@ -39,7 +39,7 @@ _Place this before `</body>` tag. The script is optimized to not affect the perf
 <script> 
   (function(){
     var e = document.createElement('script'); e.type='text/javascript'; e.async = true;
-    e.src = document.location.protocol + '//widget.taskforce.is/widget/widget.min.js';
+    e.src = document.location.protocol + '//d1ux67szpr7bp0.cloudfront.net/widget/widget.min.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s);
   })();
 </script>
@@ -67,13 +67,13 @@ The widget can be customized via a Javascript object
   };
   (function(){
     var e = document.createElement('script'); e.type='text/javascript'; e.async = true;
-    e.src = document.location.protocol + '//widget.taskforce.is/widget/widget.min.js';
+    e.src = document.location.protocol + '//d1ux67szpr7bp0.cloudfront.net/widget/widget.min.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s);
   })();
 </script>
 ```
 
-The 'dev' version of the modal is intended for sites with an audience consisting mostly of developers. When selected, it shows the banner version of the site with an additional link to this Github page. (See: [Backbone Tutorials](http://backbonetutorials.com/)).
+The 'dev' version of the banner is intended for sites with an audience consisting mostly of developers. When selected, it shows the banner version of the site with an additional link to this Github page. (See: [Backbone Tutorials](http://backbonetutorials.com/) and [Cdnjs](http://cdnjs.com)).
 
 Also feel free to fork and submit pull request for any bugs or quirks you might find. 
 
