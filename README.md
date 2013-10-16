@@ -1,6 +1,6 @@
 We are still testing over the next 24 hours. Please help us test if you wish, but please don't share this link.
 
-# Project Megaphone: Help Rally Against Surveillance
+# Project Megaphone: Rally Against Surveillance
 
 Saturday October 26th is the 12th anniversary of the PATRIOT Act. 
 
