@@ -94,5 +94,5 @@ Built by [Taskforce.is](http://taskforce.is) members [Thomas Davis](https://twit
 - [Flagger.io](http://flagger.io)
 - [EsyBoard](http://www.esyboard.com/)
 - [Open Web Platform Daily Digest](http://webplatformdaily.org/)
-- [ChrisMacNaughton](http://chrismacnaughton.com/)
+- [chrismacNaughton.com](http://chrismacnaughton.com/)
 - Submit a pull request, <a href="https://twitter.com/home?status=@sinak Please add our XXX to the list of sites participating in Project Megaphone" target="_blank">tweet</a> or <a href="mailto:sina.khanifar@gmail.com" target="_blank">email us</a> to be added here.
