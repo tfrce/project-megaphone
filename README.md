@@ -42,7 +42,7 @@ Simply copy and paste the code below into your website.
 _Place the code below before `</body>` tag. The script loads asynchronously and won't affect page load times._
 
 ```html
-<!--[if gt IE 8]>
+<!--[if !(lte IE 8)]><!-->
 <script> 
   (function(){
     var e = document.createElement('script'); e.type='text/javascript'; e.async = true;
@@ -50,7 +50,7 @@ _Place the code below before `</body>` tag. The script loads asynchronously and 
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s);
   })();
 </script>
-<![endif]-->
+<!--<![endif]-->
 ```
 
 ## Script defaults
@@ -65,6 +65,7 @@ _Place the code below before `</body>` tag. The script loads asynchronously and 
 
 You can choose a different banner style and customize the preferences using a javascript object:
 ```html
+<!--[if !(lte IE 8)]><!-->
 <script> 
   var tfrce_config = {
     show_style: 'default', // The three available styles are 'default', 'modal', and 'strip' .
@@ -78,6 +79,7 @@ You can choose a different banner style and customize the preferences using a ja
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s);
   })();
 </script>
+<!--<![endif]-->
 ```
 
 Please feel free to fork and submit pull requests for any bugs or quirks you might find. 
