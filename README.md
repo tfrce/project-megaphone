@@ -90,6 +90,7 @@ Built by [Taskforce.is](http://taskforce.is) members [Thomas Davis](https://twit
 
 - [cdnjs](http://cdnjs.com)
 - [Backbone Tutorials](http://backbonetutorials.com/)
+- [BitBin](http://bitbin.it/)
 - [sina.is](http://sina.is/)
 - [Flagger.io](http://flagger.io)
 - [EsyBoard](http://www.esyboard.com/)
