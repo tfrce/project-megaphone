@@ -34,6 +34,11 @@ The "view example page" links below display the banners even if you're not near 
 **Strip** - <a href="http://tfrce.github.io/project-megaphone/example/strip.html" target="_blank">view example page</a><br />
 <img src="screenshots/strip.png" alt="modal"width="280" />
 
+## WordPress Plugin
+
+Installing the script is now super easy with our WordPress plugin. Search for 'Project Megaphone Banner' in your WordPress plugins area, download it and activate it, that's it!
+
+http://wordpress.org/plugins/project-megaphone-banner/
 
 ## Getting started
 
@@ -84,7 +89,7 @@ You can choose a different banner style and customize the preferences using a ja
 
 Please feel free to fork and submit pull requests for any bugs or quirks you might find. 
 
-Built by [Taskforce.is](http://taskforce.is) members [Thomas Davis](https://twitter.com/neutralthoughts), [Tyler Morgan](https://twitter.com/digismack), [Beau Gunderson](https://twitter.com/beaugunderson) and [Sina Khanifar](https://twitter.com/sinak).
+Built by [Taskforce.is](http://taskforce.is) members [Braunson Yager](https://twitter.com/braunshizzle), [Thomas Davis](https://twitter.com/neutralthoughts), [Tyler Morgan](https://twitter.com/digismack), [Beau Gunderson](https://twitter.com/beaugunderson) and [Sina Khanifar](https://twitter.com/sinak).
 
 ## List of participating sites:
 
