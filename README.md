@@ -87,7 +87,7 @@ You can choose a different banner style and customize the preferences using a ja
 <!--<![endif]-->
 ```
 
-Please feel free to fork and submit pull requests for any bugs or quirks you might find. 
+Please feel free to fork and submit pull requests for any bugs or quirks you might find.  Project Megaphone's code is licensed under the terms of the [GNU Affero General Public License](https://gnu.org/licenses/agpl) version 3, or, at your option, any later version (See [./COPYING].)
 
 Built by [Taskforce.is](http://taskforce.is) members [Braunson Yager](https://twitter.com/braunshizzle), [Thomas Davis](https://twitter.com/neutralthoughts), [Tyler Morgan](https://twitter.com/digismack), [Beau Gunderson](https://twitter.com/beaugunderson) and [Sina Khanifar](https://twitter.com/sinak).
 
