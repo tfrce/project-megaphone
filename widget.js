@@ -47,10 +47,9 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
   // Do configuration
 
   widget_config.show_style = widget_config.show_style || 'default';
-  widget_config.disableGeo = widget_config.disableGeo || false;
   widget_config.debug = widget_config.debug || false;
   widget_config.disableDate = widget_config.disableDate || false;
-  widget_config.campaign = widget_config.campaign || 'stopwatchingus';
+  widget_config.campaign = widget_config.campaign || 'thedaywefightback';
   widget_config.cookieTimeout = widget_config.cookieTimeout || 172800;
 
   // Setup
@@ -58,10 +57,10 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
   var ASSET_URL, COOKIE_TIMEOUT;
 
   if(widget_config.debug) {
-    ASSET_URL = '../stopwatchingus/';
+    ASSET_URL = '../thedaywefightback/';
     COOKIE_TIMEOUT = 20;
   } else {
-    ASSET_URL = '//d1ux67szpr7bp0.cloudfront.net/project-megaphone/stopwatchingus/';
+    ASSET_URL = '//d1ux67szpr7bp0.cloudfront.net/project-megaphone/thedaywefightback/';
     COOKIE_TIMEOUT = widget_config.cookieTimeout;
   }
 
@@ -111,22 +110,14 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
       } else {
         return true
       }
-    },
-    nearDC: function (callback) {
-      window.nearDC = callback;
-      var script = document.createElement('script');
-      script.src = '//geoip.taskforce.is/?callback=nearDC'
-      document.getElementsByTagName('head')[0].appendChild(script);
     }
   }
 
   // Define campaigns
 
   var campaign = {
-    stopwatchingus: {
-      cookieName: 'stopwatchingus_hasseen6',
-
-      // Months start at zero, so October = 9
+    thedaywefightback: {
+      cookieName: 'thedaywefightback_hasseen',
       startDate: new Date(2013, 9, 15, 0),
       endDate: new Date(2013, 9, 26, 12),
       hide: function (el, callback) {
@@ -140,25 +131,6 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
           iframe_container: 'position: relative; height: 100px; max-width:1201px; margin: 0px auto 8px auto; background: #444;border-radius: 10px;',
           iframe: 'width: 100%;height: 100%;border: 0;margin:0;padding:0;border-radius: 10px;',
           closeButton: 'border: 0;height: 28px;width: 28px;cursor: pointer;position: absolute;top:33px;right:20px;background: url("' + ASSET_URL +'images/close-button.png");'
-        },
-        dev: {
-          campaign_container: 'position:fixed;width:100%;bottom:0;left:0;z-index:100000; padding: 0 20px;-webkit-box-sizing: border-box; -moz-box-sizing: border-box;',
-          iframe_container: 'position: relative; height: 100px; max-width:1201px; margin: 0px auto 8px auto; background: #444;border-radius: 10px;',
-          iframe: 'width: 100%;height: 100%;border: 0;margin:0;padding:0;border-radius: 10px;',
-          closeButton: 'border: 0;height: 28px;width: 28px;cursor: pointer;position: absolute;top:33px;right:20px;background: url("' + ASSET_URL +'images/close-button.png");'
-        },
-        strip: {
-          campaign_container: 'position:fixed;width:100%;left:0;bottom:0;opacity:1;z-index:100000;-webkit-box-sizing: border-box; -moz-box-sizing: border-box;',
-          iframe_container: 'position:relative;height:50px;margin:0 20px 0px 20px;background:#444;border-radius:10px 10px 0 0;',
-          iframe: 'width:100%;height:100%;border:0;margin:0;padding:0;border-radius:10px;',
-          closeButton: 'border:0;height:28px;width:28px;cursor:pointer;position:absolute;top:11px;right:10px;background:url("' + ASSET_URL +'images/close-button.png");'
-        },
-        modal: {
-          overlay: 'position:fixed; background:#000; width:100%; height:100%;z-index:100000;top:0; left:0; opacity:0.5;-moz-opacity: 0.50;filter: alpha(opacity=50);',
-          campaign_container: 'position:fixed;left:50%;margin-left:-250px;margin-top:40px;width:500px;top:0;opacity:1;z-index:100010;',
-          iframe_container: 'position:relative;height:365px; width:500px;background:#444;border-radius:10px;',
-          iframe: 'width:100%;height:100%;border:0;margin:0;padding:0;border-radius:10px;',
-          closeButton: 'border:0;height:28px;width:28px;cursor:pointer;position:absolute;top:15px;right:15px;background:url("' + ASSET_URL +'images/close-button.png");'
         }
       },
       show: function () {
@@ -211,12 +183,12 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
         active_campaign.config = config;
         // Check cookie for this campaign
         if(checks.hasSeenCampaign(active_campaign.cookieName)) {
-          return false;
+          //return false;
         }
 
         // Check between date
         if(!checks.betweenDate(active_campaign.startDate, active_campaign.endDate) && !active_campaign.config.disableDate) {
-          return false;
+          //return false;
         }
 
         // Check if is mobile
@@ -224,16 +196,7 @@ var _tfrce_config = (typeof tfrce_config  !== 'undefined') ? tfrce_config  : {};
           return false;
         }
 
-        // Check if they are near Washington?
-        if(active_campaign.config.disableGeo) {
-          active_campaign.show();
-        } else {
-          checks.nearDC(function (res) {
-            if(res.kilometersFromDC <= 700) {
-              active_campaign.show();
-            }
-          })
-        }
+        active_campaign.show();
       }
     }
   }
