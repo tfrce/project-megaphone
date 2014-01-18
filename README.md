@@ -111,4 +111,5 @@ Built by [Taskforce.is](http://taskforce.is) members [Braunson Yager](https://tw
 - [Restore the Fourth SF](http://restorethefourthsf.com)
 - [flood.firetree.net](http://flood.firetree.net)
 - [RubbingAlcoholic](http://blog.rubbingalcoholic.com)
+- [WP QORE](http://wpqore.com)
 - Submit a pull request, <a href="https://twitter.com/home?status=@sinak Please add our XXX to the list of sites participating in Project Megaphone" target="_blank">tweet</a> or <a href="mailto:sina.khanifar@gmail.com" target="_blank">email us</a> to be added here.
